@@ -9,6 +9,15 @@
 			content="Página de presentación de Sebastian Clark para crear sitios web modernos y claros para negocios."
 		/>
 		<meta name="theme-color" content="#0f172a" />
+		<link rel="canonical" href="https://sebastianclark.mx/" />
+		<meta property="og:type" content="website" />
+		<meta property="og:title" content="Sebastian Clark | Desarrollador Web" />
+		<meta
+			property="og:description"
+			content="Creo páginas web modernas para que tu negocio se vea profesional y venda más."
+		/>
+		<meta property="og:url" content="https://sebastianclark.mx/" />
+		<meta property="og:site_name" content="Sebastian Clark" />
 		<link rel="stylesheet" href="styles.css" />
 		<link rel="icon" type="image/svg+xml" href="favicon.svg" />
 		<link rel="shortcut icon" href="favicon.svg" />
@@ -59,24 +68,24 @@
 
 					<aside class="card hero-stats">
 						<div class="stat">
-							<div class="label">Te respondo rápido</div>
-							<div class="value">En menos de 24h</div>
-							<p class="stat-note">Me cuentas tu idea y te digo cómo convertirla en una web útil para vender.</p>
+							<div class="label">Cómo trabajo contigo</div>
+							<div class="value">Respuesta rápida y directa</div>
+							<p class="stat-note">Me compartes tu negocio y te propongo una estructura clara, sin vueltas ni tecnicismos.</p>
 						</div>
 						<div class="stat">
-							<div class="label">Tu negocio se entiende fácil</div>
-							<div class="value">Mensaje claro</div>
-							<p class="stat-note">Organizo la página para que cualquier persona entienda qué haces y cómo ayudarte.</p>
+							<div class="label">Qué recibe tu cliente</div>
+							<div class="value">Mensaje que se entiende</div>
+							<p class="stat-note">Tu oferta queda explicada de forma simple para que más personas te contacten con intención real.</p>
 						</div>
 						<div class="stat">
-							<div class="label">Diseño moderno sin exceso</div>
-							<div class="value">Profesional y limpio</div>
-							<p class="stat-note">Uso colores y efectos con equilibrio, para que destaque tu marca sin saturar.</p>
+							<div class="label">Resultado visual</div>
+							<div class="value">Imagen profesional</div>
+							<p class="stat-note">Diseño moderno, limpio y enfocado en vender: menos ruido visual, más confianza para comprar.</p>
 						</div>
 						<div class="stat">
-							<div class="label">Atención en México</div>
-							<div class="value">México</div>
-							<p class="stat-note">Comunicación simple por WhatsApp, llamada o correo, según prefieras.</p>
+							<div class="label">Acompañamiento</div>
+							<div class="value">Soporte cercano</div>
+							<p class="stat-note">Te acompaño en ajustes y mejoras para que tu web siga funcionando como herramienta de ventas.</p>
 						</div>
 					</aside>
 				</div>
@@ -313,8 +322,17 @@
 						})
 						.catch(function (error) {
 							console.error("EmailJS error:", error);
-							formStatus.textContent =
-								"No se pudo enviar. Verifica Service/Template IDs y que el template use las variables correctas.";
+
+							var errorText = (error && (error.text || error.message || "")).toString().toLowerCase();
+							var originIssue =
+								(error && (error.status === 403 || error.status === 412)) ||
+								errorText.includes("origin") ||
+								errorText.includes("domain") ||
+								errorText.includes("forbidden");
+
+							formStatus.textContent = originIssue
+								? "No autorizado por dominio. Revisa Allowed Origins en EmailJS para sebastianclark.mx."
+								: "No se pudo enviar. Verifica Service/Template IDs y que el template use las variables correctas.";
 							formStatus.className = "form-note error";
 						})
 						.finally(function () {
