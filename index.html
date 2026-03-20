@@ -18,11 +18,13 @@
 		/>
 		<meta property="og:url" content="https://sebastianclark.mx/" />
 		<meta property="og:site_name" content="Sebastian Clark" />
+		<meta name="robots" content="index,follow,max-image-preview:large" />
 		<link rel="stylesheet" href="styles.css" />
 		<style>
 			/* Fix visual: separación entre bloques de precios */
 			#precios .grid-3,
 			#precios .price-extra {
+				display: grid;
 				gap: 1.25rem;
 			}
 
@@ -31,10 +33,97 @@
 				align-items: stretch;
 			}
 
+			#precios .price-note {
+				margin-top: 1.25rem;
+			}
+
 			#precios .price-card {
 				height: 100%;
 			}
+
+			/* Solo si en móvil se apila por CSS global */
+			@media (max-width: 768px) {
+				#precios .price-extra .price-card + .price-card {
+					margin-top: 0;
+				}
+			}
+
+			/* Honeypot antispam */
+			.hp-field {
+				position: absolute !important;
+				left: -9999px !important;
+				opacity: 0 !important;
+				pointer-events: none !important;
+			}
+
+			/* Centrado de texto en bloques solicitados */
+			.process-card,
+			#precios .price-card,
+			#precios .price-note {
+				text-align: center;
+			}
+
+			#precios .price-list {
+				text-align: center;
+				padding-left: 0;
+				list-style: none;
+			}
+
+			/* Centrar título y texto introductorio de contacto */
+			#contacto > h2,
+			#contacto > .lead {
+				text-align: center;
+				margin-left: auto;
+				margin-right: auto;
+			}
+
+			#contacto > .lead {
+				max-width: 900px;
+			}
+
+			/* Centrado para títulos y lead de secciones específicas */
+			.intro-center > h2,
+			.intro-center > .lead {
+				text-align: center;
+				margin-left: auto;
+				margin-right: auto;
+			}
+
+			.intro-center > .lead {
+				max-width: 900px;
+			}
+
+			/* Forzar centrado real del párrafo debajo de cada H2 en secciones indicadas */
+			.intro-center > h2 + p,
+			#contacto > h2 + p {
+				text-align: center !important;
+				max-width: 900px;
+				margin-left: auto !important;
+				margin-right: auto !important;
+			}
+
+			/* Centrar badges dentro del cuadro de stack */
+			.stack-list {
+				display: flex !important;
+				flex-wrap: wrap;
+				justify-content: center;
+				align-items: center;
+				gap: 0.75rem;
+				text-align: center;
+			}
 		</style>
+		<script type="application/ld+json">
+			{
+				"@context": "https://schema.org",
+				"@type": "ProfessionalService",
+				"name": "Sebastian Clark",
+				"url": "https://sebastianclark.mx/",
+				"telephone": "+52 662 325 5194",
+				"email": "cotizacion@sebastianclark.mx",
+				"areaServed": "México",
+				"serviceType": "Desarrollo web para negocios"
+			}
+		</script>
 		<link rel="icon" type="image/svg+xml" href="favicon.svg?v=5" sizes="any" />
 		<link rel="shortcut icon" href="favicon.svg?v=5" type="image/svg+xml" />
 		<link rel="apple-touch-icon" href="favicon.svg?v=5" />
@@ -43,6 +132,7 @@
 		<meta name="emailjs-service-id" content="service_81v9uam" />
 		<meta name="emailjs-template-id" content="template_x90xlee" />
 	</head>
+
 	<body>
 		<header class="site-header">
 			<nav class="container nav">
@@ -50,6 +140,7 @@
 				<div class="nav-links">
 					<a href="#servicios">Qué hago por ti</a>
 					<a href="#resultado">Resultados para tu negocio</a>
+					<a href="#precios">Precios</a>
 					<a href="#contacto">Contacto</a>
 				</div>
 			</nav>
@@ -108,7 +199,7 @@
 				</div>
 			</section>
 
-			<section id="servicios" class="section fade-in">
+			<section id="servicios" class="section fade-in intro-center">
 				<h2>¿Qué puedo hacer por tu negocio?</h2>
 				<p class="lead">Sin palabras técnicas raras: te explico cada paso y construyo algo que realmente te ayude a conseguir clientes.</p>
 
@@ -130,7 +221,7 @@
 				</div>
 			</section>
 
-			<section id="resultado" class="section fade-in">
+			<section id="resultado" class="section fade-in intro-center">
 				<h2>Resultados reales para negocios que aún no tienen página web</h2>
 				<p class="lead">
 					Si hoy vendes por recomendación, WhatsApp o redes sociales, esta web te ayuda a verte profesional,
@@ -164,7 +255,7 @@
 				</div>
 			</section>
 
-			<section class="section fade-in">
+			<section class="section fade-in intro-center">
 				<h2>Con qué construyo tu proyecto</h2>
 				<p class="lead">Uso herramientas modernas para crear páginas rápidas, bonitas y fáciles de mantener.</p>
 				<div class="card stack-list">
@@ -174,11 +265,12 @@
 					<span class="badge">Python</span>
 					<span class="badge">Automatizaciones</span>
 					<span class="badge">Buenas prácticas visuales</span>
+					<span class="badge">Atención personalizada</span>
 				</div>
 			</section>
 
 			<!-- NUEVA SECCIÓN: PROCESO -->
-			<section class="section fade-in">
+			<section class="section fade-in intro-center">
 				<h2>¿Cómo trabajamos juntos?</h2>
 				<p class="lead">Simple, sin complicaciones. Tú me cuentas tu idea y yo me encargo del resto.</p>
 				<div class="grid-3">
@@ -201,7 +293,7 @@
 			</section>
 
 			<!-- NUEVA SECCIÓN: PRECIOS -->
-			<section id="precios" class="section fade-in">
+			<section id="precios" class="section fade-in intro-center">
 				<h2>¿Cuánto cuesta?</h2>
 				<p class="lead">Precios claros, sin letra chica. Elige lo que necesita tu negocio hoy.</p>
 
@@ -300,10 +392,10 @@
 						<p><strong>Teléfono:</strong> <a href="tel:+526623255194">+52 662 325 5194</a></p>
 						<p>
 							<strong>Correo:</strong>
-							<a href="mailto:sebastianclarkweb@gmail.com">sebastianclarkweb@gmail.com</a>
+							<a href="mailto:cotizacion@sebastianclark.mx">cotizacion@sebastianclark.mx</a>
 						</p>
 						<p class="form-note">
-							Puedes enviarme por formulario, llamada o WhatsApp. Te respondo con una propuesta clara.
+							Puedes contactarme por formulario, llamada o WhatsApp. Te respondo con una propuesta clara.
 						</p>
 					</aside>
 
@@ -333,6 +425,8 @@
 							placeholder="Cuéntame qué necesitas y qué objetivo quieres lograr"
 							required
 						></textarea>
+
+						<input class="hp-field" type="text" id="website" name="website" tabindex="-1" autocomplete="off" aria-hidden="true" />
 
 						<button class="btn" id="submitButton" type="submit">Enviar mensaje</button>
 						<p id="formStatus" class="form-note" aria-live="polite"></p>
@@ -434,6 +528,9 @@
 					event.preventDefault();
 					if (isSubmitting) return;
 
+					var botField = document.getElementById("website");
+					if (botField && botField.value.trim() !== "") return;
+
 					var name = document.getElementById("clientName").value.trim();
 					var email = document.getElementById("clientEmail").value.trim();
 					var phone = document.getElementById("clientPhone").value.trim();
@@ -455,6 +552,7 @@
 
 					isSubmitting = true;
 					submitButton.disabled = true;
+					submitButton.setAttribute("aria-busy", "true");
 					submitButton.textContent = "Enviando...";
 					formStatus.textContent = "Enviando tu mensaje...";
 					formStatus.className = "form-note";
@@ -475,7 +573,7 @@
 						from_email: email,
 						from_phone: phone || "No compartido",
 						service_type: service,
-						to_email: "sebastianclarkweb@gmail.com",
+						to_email: "cotizacion@sebastianclark.mx",
 					};
 
 					window.emailjs
@@ -503,6 +601,7 @@
 						.finally(function () {
 							isSubmitting = false;
 							submitButton.disabled = false;
+							submitButton.removeAttribute("aria-busy");
 							submitButton.textContent = "Enviar mensaje";
 						});
 				});
