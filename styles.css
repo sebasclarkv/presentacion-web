@@ -378,16 +378,130 @@ footer {
   color: var(--text-soft);
 }
 
-@keyframes glowShift {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
+/* ── Fade-in al scroll ── */
+.fade-in {
+	opacity: 0;
+	transform: translateY(24px);
+	transition: opacity 0.6s ease, transform 0.6s ease;
+}
+.fade-in.visible {
+	opacity: 1;
+	transform: translateY(0);
+}
+
+/* ── Proceso ── */
+.process-card {
+	text-align: center;
+	padding: 2rem 1.5rem;
+}
+.process-number {
+	width: 48px;
+	height: 48px;
+	border-radius: 50%;
+	background: linear-gradient(135deg, #3b82f6, #7c3aed);
+	color: #fff;
+	font-size: 1.4rem;
+	font-weight: 800;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 0 auto 1rem;
+}
+
+/* ── Precios ── */
+.grid-2 {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 1.5rem;
+	margin-top: 1.5rem;
+}
+.price-card {
+	display: flex;
+	flex-direction: column;
+	gap: 0.75rem;
+	position: relative;
+}
+.price-badge {
+	position: absolute;
+	top: -12px;
+	left: 1.5rem;
+	background: linear-gradient(135deg, #3b82f6, #7c3aed);
+	color: #fff;
+	font-size: 0.72rem;
+	font-weight: 700;
+	padding: 3px 12px;
+	border-radius: 99px;
+	letter-spacing: 0.04em;
+	text-transform: uppercase;
+}
+.price-range {
+	font-size: 1.6rem;
+	font-weight: 800;
+	color: #e2e8f0;
+	line-height: 1.2;
+}
+.price-range span {
+	font-size: 0.9rem;
+	font-weight: 500;
+	color: #94a3b8;
+}
+.price-desc {
+	color: #94a3b8;
+	font-size: 0.92rem;
+}
+.price-list {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	display: flex;
+	flex-direction: column;
+	gap: 0.4rem;
+	font-size: 0.88rem;
+	color: #cbd5e1;
+	flex: 1;
+}
+.price-note {
+	margin-top: 2rem;
+}
+.price-note h3 {
+	margin-bottom: 0.75rem;
+}
+.price-extra {
+	margin-top: 1.5rem;
+}
+
+/* ── WhatsApp flotante ── */
+.whatsapp-float {
+	position: fixed;
+	bottom: 1.75rem;
+	right: 1.75rem;
+	z-index: 999;
+	display: flex;
+	align-items: center;
+	gap: 0.5rem;
+	background: #25d366;
+	color: #fff;
+	font-weight: 700;
+	font-size: 0.9rem;
+	padding: 0.65rem 1.2rem 0.65rem 0.9rem;
+	border-radius: 99px;
+	text-decoration: none;
+	box-shadow: 0 4px 20px rgba(37, 211, 102, 0.4);
+	transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.whatsapp-float:hover {
+	transform: translateY(-3px);
+	box-shadow: 0 6px 28px rgba(37, 211, 102, 0.55);
+}
+
+/* ── Responsive precios y proceso ── */
+@media (max-width: 640px) {
+	.grid-2 {
+		grid-template-columns: 1fr;
+	}
+	.price-range {
+		font-size: 1.3rem;
+	}
 }
 
 @media (max-width: 930px) {
