@@ -296,6 +296,38 @@ body {
   background: rgba(255, 107, 107, 0.25);
 }
 
+/* ── Aplicaciones ── */
+.apps-hero {
+  padding-bottom: 1.4rem;
+}
+
+.app-card {
+  max-width: 720px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 2rem;
+}
+
+.app-card h2 {
+  margin: 0.45rem 0 0.65rem;
+}
+
+.app-card p {
+  margin: 0 auto 1.35rem;
+  max-width: 56ch;
+  color: var(--text-soft);
+}
+
+.app-store-button[aria-disabled="true"] {
+  cursor: default;
+  opacity: 0.78;
+}
+
+.app-store-button[aria-disabled="true"]:hover {
+  transform: none;
+  box-shadow: none;
+}
+
 .stack-list {
   display: flex;
   flex-wrap: wrap;
