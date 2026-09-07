@@ -552,3 +552,32 @@ footer {
     gap: 0.6rem;
   }
 }
+
+/* Juegos: misma tarjeta, paleta y ritmo que Aplicaciones. */
+.nav { gap: 1rem; }
+.nav-links { justify-content: center; }
+.nav-links a[aria-current="page"] { border-color: var(--accent-2); background: rgba(0, 211, 255, 0.12); }
+.intro-center { text-align: center; }
+.intro-center p.lead { margin-inline: auto; }
+.game-features { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; margin-block: 1.5rem; }
+.game-features > div { padding: 1rem; border: 1px solid var(--card-border); border-radius: 14px; }
+.game-features h3 { margin: 0 0 .5rem; }
+.game-features p { margin: 0; }
+.game-card .tool-status { font-size: .875rem; }
+.game-card .btn { white-space: normal; text-align: center; min-height: 44px; }
+.game-card .beta-note { margin: 1rem auto 0; font-size: .875rem; }
+.legal-content { max-width: 850px; margin-inline: auto; overflow-wrap: anywhere; }
+.legal-content h2 { margin-top: 2.5rem; }
+.legal-content h3 { margin-top: 1.5rem; }
+.legal-content p, .legal-content li { line-height: 1.75; color: var(--text-soft); }
+.legal-content a:not(.btn), footer a { color: #96e6ff; }
+.legal-back { margin-block: 1rem 2rem; }
+#operator-ops, #spendly-travel { scroll-margin-top: 12rem; }
+@media (max-width: 640px) {
+  .game-features { grid-template-columns: 1fr; }
+  .game-card { padding: 1.25rem; }
+}
+
+.nav .brand { flex-shrink: 0; }
+.nav .nav-links { justify-content: flex-end; }
+@media (max-width: 930px) { .nav .nav-links { justify-content: center; } }
