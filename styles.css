@@ -581,3 +581,19 @@ footer {
 .nav .brand { flex-shrink: 0; }
 .nav .nav-links { justify-content: flex-end; }
 @media (max-width: 930px) { .nav .nav-links { justify-content: center; } }
+
+/* Portada: apps y juegos primero; servicios web como complemento. */
+.featured-projects .project-card { display: flex; flex-direction: column; align-items: stretch; padding: 1.6rem; }
+.project-card .tool-status { align-self: center; font-size: .875rem; }
+.project-card h3 { font-size: 1.6rem; margin: .5rem 0; }
+.project-card p { color: var(--text-soft); flex: 1; margin: .25rem 0 1.5rem; }
+.web-service { margin-top: 1.5rem; }
+.web-service p { max-width: 75ch; margin: 0 auto 1rem; color: var(--text-soft); }
+.primary-offers { align-items: stretch; }
+.web-pricing { margin-top: 2rem; }
+.web-pricing summary { cursor: pointer; padding: 1.2rem; border: 1px solid var(--card-border); border-radius: 14px; background: var(--glass); font-weight: 700; }
+.web-pricing[open] summary { margin-bottom: 1.5rem; }
+main .btn { white-space: normal; text-align: center; min-height: 44px; }
+.btn:focus-visible, summary:focus-visible { outline: 3px solid var(--accent-2); outline-offset: 4px; }
+main section[id], #opciones-web, #desarrollo-web { scroll-margin-top: 12rem; }
+@media (max-width: 480px) { .hero-stats { grid-template-columns: 1fr; } .hero-stats .stat { min-height: auto; } }
