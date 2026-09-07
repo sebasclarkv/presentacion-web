@@ -156,6 +156,7 @@
 				<div class="nav-links">
 					<a href="#servicios">Qué hago por ti</a>
 					<a href="apps.html">Apps hechas por mí</a>
+					<a href="games.html">Juegos</a>
 					<a href="#resultado">Resultados para tu negocio</a>
 					<a href="#precios">Precios</a>
 					<a href="#contacto">Contacto</a>
@@ -517,7 +518,7 @@
 						{ threshold: 0.12 }
 					);
 					fadeEls.forEach(function (el) {
-						observer.observe(el);
+						el.classList.add("visible");
 					});
 				} else {
 					fadeEls.forEach(function (el) {
