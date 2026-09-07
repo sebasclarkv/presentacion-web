@@ -597,3 +597,85 @@ main .btn { white-space: normal; text-align: center; min-height: 44px; }
 .btn:focus-visible, summary:focus-visible { outline: 3px solid var(--accent-2); outline-offset: 4px; }
 main section[id], #opciones-web, #desarrollo-web { scroll-margin-top: 12rem; }
 @media (max-width: 480px) { .hero-stats { grid-template-columns: 1fr; } .hero-stats .stat { min-height: auto; } }
+
+/* ── Correcciones visuales móviles y precios web siempre visibles ── */
+.web-pricing > summary {
+  cursor: default;
+  pointer-events: none;
+  list-style: none;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  font-size: clamp(1.15rem, 3vw, 1.4rem);
+  line-height: 1.35;
+  text-align: center;
+  margin: 0 0 1.5rem;
+}
+.web-pricing > summary::-webkit-details-marker { display: none; }
+.web-pricing > summary::marker { content: ""; }
+.web-pricing > .grid-3,
+.web-pricing > .grid-2 { display: grid !important; }
+.web-pricing > .price-note { display: block !important; }
+.web-pricing[open] > summary { margin-bottom: 1.5rem; }
+
+@media (max-width: 930px) {
+  .site-header {
+    position: static;
+  }
+
+  .nav {
+    padding: 0.8rem 0 1rem;
+  }
+
+  .nav-links {
+    width: 100%;
+    justify-content: center !important;
+    gap: 0.55rem 0.65rem;
+  }
+
+  .nav-links a {
+    font-size: 0.86rem;
+    padding: 0.38rem 0.7rem;
+  }
+
+  main section[id],
+  #opciones-web,
+  #desarrollo-web,
+  #operator-ops,
+  #spendly-travel {
+    scroll-margin-top: 1.5rem;
+  }
+
+  .web-service {
+    margin-top: 1.25rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .grid-2,
+  .grid-3 {
+    gap: 1.25rem;
+  }
+
+  .web-pricing {
+    margin-top: 2.25rem;
+  }
+
+  .web-pricing > summary {
+    margin-bottom: 1.25rem;
+    padding-inline: 0.5rem;
+  }
+
+  .whatsapp-float {
+    right: 0.85rem;
+    bottom: calc(0.85rem + env(safe-area-inset-bottom));
+    padding: 0.58rem 0.82rem;
+    font-size: 0.82rem;
+  }
+
+  .whatsapp-float svg {
+    width: 24px;
+    height: 24px;
+  }
+}
