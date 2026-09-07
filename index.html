@@ -518,7 +518,7 @@
 						{ threshold: 0.12 }
 					);
 					fadeEls.forEach(function (el) {
-						el.classList.add("visible");
+						observer.observe(el);
 					});
 				} else {
 					fadeEls.forEach(function (el) {
