@@ -3,130 +3,36 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<meta name='impact-site-verification' value='563f8ff8-bdd1-4e03-891c-8ab06d3a4abb'>
+		<meta name="impact-site-verification" value="563f8ff8-bdd1-4e03-891c-8ab06d3a4abb" />
 		<title>Sebastian Clark | Apps y juegos</title>
-		<meta
-			name="description"
-			content="Desarrollo de apps para iPhone y juegos por Sebastian Clark. Conoce Spendly Travel y Operator Ops. También creo sitios web y automatizaciones para negocios."
-		/>
+		<meta name="description" content="Desarrollo de apps para iPhone y juegos por Sebastian Clark. Conoce Spendly Travel y Operator Ops. También creo sitios web y automatizaciones para negocios." />
 		<meta name="theme-color" content="#0f172a" />
 		<link rel="canonical" href="https://sebastianclark.mx/" />
 		<link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml" />
 		<meta property="og:type" content="website" />
 		<meta property="og:title" content="Sebastian Clark | Apps y juegos" />
-		<meta
-			property="og:description"
-			content="Creo apps y juegos que convierten ideas en experiencias."
-		/>
+		<meta property="og:description" content="Creo apps y juegos que convierten ideas en experiencias." />
 		<meta property="og:url" content="https://sebastianclark.mx/" />
 		<meta property="og:site_name" content="Sebastian Clark" />
 		<meta name="robots" content="index,follow,max-image-preview:large" />
 		<link rel="stylesheet" href="styles.css" />
+		<link rel="stylesheet" href="i18n.css" />
 		<style>
-			/* Fix visual: separación entre bloques de precios */
 			#precios .grid-3,
-			#precios .price-extra {
-				display: grid;
-				gap: 1.25rem;
-			}
-
-			#precios .grid-3 {
-				margin-top: 1.5rem;
-			}
-
-			#precios .price-extra {
-				margin-top: 1.25rem;
-				align-items: stretch;
-			}
-
-			#precios .price-note {
-				margin-top: 1.25rem;
-			}
-
-			#precios .price-card {
-				height: 100%;
-			}
-
-			/* Solo si en móvil se apila por CSS global */
-			@media (max-width: 768px) {
-				#precios .price-extra .price-card + .price-card {
-					margin-top: 0;
-				}
-			}
-
-			/* Honeypot antispam */
-			.hp-field {
-				position: absolute !important;
-				left: -9999px !important;
-				opacity: 0 !important;
-				pointer-events: none !important;
-			}
-
-			/* Centrado de texto en bloques solicitados */
-			.process-card,
-			#precios .price-card,
-			#precios .price-note {
-				text-align: center;
-			}
-
-			#precios .price-list {
-				text-align: center;
-				padding-left: 0;
-				list-style: none;
-			}
-
-			/* Centrar título y texto introductorio de contacto */
-			#contacto > h2,
-			#contacto > .lead {
-				text-align: center;
-				margin-left: auto;
-				margin-right: auto;
-			}
-
-			#contacto > .lead {
-				max-width: 900px;
-			}
-
-			/* Centrado para títulos y lead de secciones específicas */
-			.intro-center > h2,
-			.intro-center > .lead {
-				text-align: center;
-				margin-left: auto;
-				margin-right: auto;
-			}
-
-			.intro-center > .lead {
-				max-width: 900px;
-			}
-
-			/* Forzar centrado real del párrafo debajo de cada H2 en secciones indicadas */
-			.intro-center > h2 + p,
-			#contacto > h2 + p {
-				text-align: center !important;
-				max-width: 900px;
-				margin-left: auto !important;
-				margin-right: auto !important;
-			}
-
-			/* Centrar badges dentro del cuadro de stack */
-			.stack-list {
-				display: flex !important;
-				flex-wrap: wrap;
-				justify-content: center;
-				align-items: center;
-				gap: 0.75rem;
-				text-align: center;
-			}
-
-			/* Link Aviso Legal en footer */
-			footer a,
-			footer a:visited {
-				color: #7dd3fc;
-				text-decoration: underline;
-			}
-			footer a:hover {
-				color: #bae6fd;
-			}
+			#precios .price-extra { display: grid; gap: 1.25rem; }
+			#precios .grid-3 { margin-top: 1.5rem; }
+			#precios .price-extra { margin-top: 1.25rem; align-items: stretch; }
+			#precios .price-note { margin-top: 1.25rem; }
+			#precios .price-card { height: 100%; }
+			.hp-field { position: absolute !important; left: -9999px !important; opacity: 0 !important; pointer-events: none !important; }
+			.process-card, #precios .price-card, #precios .price-note { text-align: center; }
+			#precios .price-list { text-align: center; padding-left: 0; list-style: none; }
+			#contacto > h2, #contacto > .lead, .intro-center > h2, .intro-center > .lead { text-align: center; margin-left: auto; margin-right: auto; }
+			#contacto > .lead, .intro-center > .lead { max-width: 900px; }
+			.intro-center > h2 + p, #contacto > h2 + p { text-align: center !important; max-width: 900px; margin-left: auto !important; margin-right: auto !important; }
+			.stack-list { display: flex !important; flex-wrap: wrap; justify-content: center; align-items: center; gap: 0.75rem; text-align: center; }
+			footer a, footer a:visited { color: #7dd3fc; text-decoration: underline; }
+			footer a:hover { color: #bae6fd; }
 		</style>
 		<script type="application/ld+json">
 			{
@@ -147,19 +53,20 @@
 		<meta name="emailjs-public-key" content="tXzHBws1NxPbGruQ-" />
 		<meta name="emailjs-service-id" content="service_81v9uam" />
 		<meta name="emailjs-template-id" content="template_x90xlee" />
+		<script src="i18n.js" defer></script>
 	</head>
 
-	<body>
+	<body data-page="index">
 		<header class="site-header">
 			<nav class="container nav">
 				<div class="brand">Sebastian <span>Clark</span></div>
 				<div class="nav-links">
-                        <a href="apps.html">Apps</a>
-                        <a href="games.html">Juegos</a>
-                        <a href="#servicios">Servicios</a>
-                        <a href="#desarrollo-web">Desarrollo web</a>
-                        <a href="#contacto">Hablemos</a>
-                    </div>
+					<a href="apps.html" data-i18n="nav.apps">Apps</a>
+					<a href="games.html" data-i18n="nav.games">Juegos</a>
+					<a href="#servicios" data-i18n="nav.services">Servicios</a>
+					<a href="#desarrollo-web" data-i18n="nav.web">Desarrollo web</a>
+					<a href="#contacto" data-i18n="nav.talk">Hablemos</a>
+				</div>
 			</nav>
 		</header>
 
@@ -167,349 +74,337 @@
 			<section class="hero">
 				<div class="hero-grid">
 					<article class="card hero-copy">
-						<h1>
-							Hola, soy <strong>Sebastian Clark</strong>.<br />
-							<span class="headline-accent">Creo apps y juegos que convierten ideas en experiencias.</span>
-						</h1>
-						<p class="subtitle">Diseño y desarrollo aplicaciones para iPhone y juegos con personalidad, controles claros y atención al detalle. También construyo sitios web y automatizaciones para darle presencia y herramientas a tu negocio.</p>
-
+						<h1 data-i18n="index.hero.title">Hola, soy <strong>Sebastian Clark</strong>.<br /><span class="headline-accent">Creo apps y juegos que convierten ideas en experiencias.</span></h1>
+						<p class="subtitle" data-i18n="index.hero.subtitle">Diseño y desarrollo aplicaciones para iPhone y juegos con personalidad, controles claros y atención al detalle. También construyo sitios web y automatizaciones para darle presencia y herramientas a tu negocio.</p>
 						<div class="badges">
-                            <span class="badge">Apps para iPhone</span>
-                            <span class="badge">Juegos</span>
-                            <span class="badge">Diseño y desarrollo</span>
-                            <span class="badge">Soporte cercano</span>
-                        </div>
-
+							<span class="badge" data-i18n="index.badge.iphone">Apps para iPhone</span>
+							<span class="badge" data-i18n="index.badge.games">Juegos</span>
+							<span class="badge" data-i18n="index.badge.design">Diseño y desarrollo</span>
+							<span class="badge" data-i18n="index.badge.support">Soporte cercano</span>
+						</div>
 						<div class="actions">
-							<a class="btn" href="#contacto">Hablemos de tu idea</a>
-							<a class="btn secondary" href="#resultado">Explorar mis proyectos</a>
+							<a class="btn" href="#contacto" data-i18n="index.hero.cta">Hablemos de tu idea</a>
+							<a class="btn secondary" href="#resultado" data-i18n="index.hero.projects">Explorar mis proyectos</a>
 						</div>
 					</article>
 
 					<aside class="card hero-stats" aria-label="Mi enfoque de desarrollo">
-                        <div class="stat"><div class="label">Mi enfoque</div><div class="value">Apps y juegos</div><p class="stat-note">Productos propios y proyectos a medida, desde la primera idea hasta las pruebas.</p></div>
-                        <div class="stat"><div class="label">Experiencia de uso</div><div class="value">Cada interacción cuenta</div><p class="stat-note">Pantallas claras y controles que acompañan lo que la persona quiere hacer.</p></div>
-                        <div class="stat"><div class="label">Desarrollo</div><div class="value">Probar y mejorar</div><p class="stat-note">Versiones que se pueden revisar para ajustar funciones, rendimiento y detalles.</p></div>
-                        <div class="stat"><div class="label">También para tu negocio</div><div class="value">Web y automatización</div><p class="stat-note">Sitios responsive e integraciones que completan tu presencia digital.</p></div>
-                    </aside>
+						<div class="stat">
+							<div class="label" data-i18n="index.stat.1.label">Mi enfoque</div>
+							<div class="value" data-i18n="index.stat.1.value">Apps y juegos</div>
+							<p class="stat-note" data-i18n="index.stat.1.note">Productos propios y proyectos a medida, desde la primera idea hasta las pruebas.</p>
+						</div>
+						<div class="stat">
+							<div class="label" data-i18n="index.stat.2.label">Experiencia de uso</div>
+							<div class="value" data-i18n="index.stat.2.value">Cada interacción cuenta</div>
+							<p class="stat-note" data-i18n="index.stat.2.note">Pantallas claras y controles que acompañan lo que la persona quiere hacer.</p>
+						</div>
+						<div class="stat">
+							<div class="label" data-i18n="index.stat.3.label">Desarrollo</div>
+							<div class="value" data-i18n="index.stat.3.value">Probar y mejorar</div>
+							<p class="stat-note" data-i18n="index.stat.3.note">Versiones que se pueden revisar para ajustar funciones, rendimiento y detalles.</p>
+						</div>
+						<div class="stat">
+							<div class="label" data-i18n="index.stat.4.label">También para tu negocio</div>
+							<div class="value" data-i18n="index.stat.4.value">Web y automatización</div>
+							<p class="stat-note" data-i18n="index.stat.4.note">Sitios responsive e integraciones que completan tu presencia digital.</p>
+						</div>
+					</aside>
 				</div>
 			</section>
 
-            <section id="resultado" class="section fade-in intro-center">
-                <h2>Ideas que ya puedes explorar</h2>
-                <p class="lead">Una app para organizar tus viajes y un juego que está tomando forma. Conoce lo que estoy creando.</p>
-                <div class="grid-2 featured-projects">
-                    <article class="card project-card">
-                        <span class="tool-status good">App · Disponible en App Store</span>
-                        <h3>Spendly Travel</h3>
-                        <p>Itinerarios, gastos y presupuestos en un solo lugar para organizar cada etapa de tu viaje.</p>
-                        <a class="btn" href="apps.html">Conocer Spendly Travel</a>
-                    </article>
-                    <article class="card project-card">
-                        <span class="tool-status warn">Juego · En desarrollo</span>
-                        <h3>Operator Ops</h3>
-                        <p>Acción táctica con vista superior. Explora el proyecto y participa en las pruebas mediante TestFlight.</p>
-                        <a class="btn" href="games.html">Explorar Operator Ops</a>
-                    </article>
-                </div>
-            </section>
-            <section id="servicios" class="section fade-in intro-center">
-                <h2>De tu idea a una app o un juego</h2>
-                <p class="lead">Definimos una primera versión con un propósito claro y construimos a partir de ella.</p>
-                <div class="grid-2">
-                    <article class="card service-card"><h3>Aplicaciones para iPhone</h3><p>Diseño de pantallas, desarrollo de funciones y preparación para pruebas y distribución. Una experiencia pensada para las personas que usarán tu app.</p></article>
-                    <article class="card service-card"><h3>Desarrollo de juegos</h3><p>Prototipos, mecánicas, controles e interfaces. Probamos la experiencia de juego y ajustamos su alcance antes de ampliar el contenido.</p></article>
-                </div>
-                <article id="desarrollo-web" class="card web-service">
-                    <h3>También desarrollo tu presencia web</h3>
-                    <p>Sitios de presentación, páginas para empresas y automatizaciones. Diseño responsive, estructura clara y formularios e integraciones para conectar con tus clientes.</p>
-                    <a class="btn secondary" href="#opciones-web">Ver servicios y precios web</a>
-                </article>
-            </section>
+			<section id="resultado" class="section fade-in intro-center">
+				<h2 data-i18n="index.projects.title">Ideas que ya puedes explorar</h2>
+				<p class="lead" data-i18n="index.projects.lead">Una app para organizar tus viajes y un juego que está tomando forma. Conoce lo que estoy creando.</p>
+				<div class="grid-2 featured-projects">
+					<article class="card project-card">
+						<span class="tool-status good" data-i18n="index.spendly.status">App · Disponible en App Store</span>
+						<h3>Spendly Travel</h3>
+						<p data-i18n="index.spendly.desc">Itinerarios, gastos y presupuestos en un solo lugar para organizar cada etapa de tu viaje.</p>
+						<a class="btn" href="apps.html" data-i18n="index.spendly.cta">Conocer Spendly Travel</a>
+					</article>
+					<article class="card project-card">
+						<span class="tool-status warn" data-i18n="index.operator.status">Juego · En desarrollo</span>
+						<h3>Operator Ops</h3>
+						<p data-i18n="index.operator.desc">Acción táctica con vista superior. Explora el proyecto y participa en las pruebas mediante TestFlight.</p>
+						<a class="btn" href="games.html" data-i18n="index.operator.cta">Explorar Operator Ops</a>
+					</article>
+				</div>
+			</section>
+
+			<section id="servicios" class="section fade-in intro-center">
+				<h2 data-i18n="index.services.title">De tu idea a una app o un juego</h2>
+				<p class="lead" data-i18n="index.services.lead">Definimos una primera versión con un propósito claro y construimos a partir de ella.</p>
+				<div class="grid-2">
+					<article class="card service-card">
+						<h3 data-i18n="index.services.app.title">Aplicaciones para iPhone</h3>
+						<p data-i18n="index.services.app.desc">Diseño de pantallas, desarrollo de funciones y preparación para pruebas y distribución. Una experiencia pensada para las personas que usarán tu app.</p>
+					</article>
+					<article class="card service-card">
+						<h3 data-i18n="index.services.game.title">Desarrollo de juegos</h3>
+						<p data-i18n="index.services.game.desc">Prototipos, mecánicas, controles e interfaces. Probamos la experiencia de juego y ajustamos su alcance antes de ampliar el contenido.</p>
+					</article>
+				</div>
+				<article id="desarrollo-web" class="card web-service">
+					<h3 data-i18n="index.services.web.title">También desarrollo tu presencia web</h3>
+					<p data-i18n="index.services.web.desc">Sitios de presentación, páginas para empresas y automatizaciones. Diseño responsive, estructura clara y formularios e integraciones para conectar con tus clientes.</p>
+					<a class="btn secondary" href="#opciones-web" data-i18n="index.services.web.cta">Ver servicios y precios web</a>
+				</article>
+			</section>
 
 			<section class="section fade-in intro-center">
-				<h2>Con qué construyo tu proyecto</h2>
-				<p class="lead">Swift y Xcode para el desarrollo en iOS; tecnologías web y Python para sitios e integraciones.</p>
+				<h2 data-i18n="index.stack.title">Con qué construyo tu proyecto</h2>
+				<p class="lead" data-i18n="index.stack.lead">Swift y Xcode para el desarrollo en iOS; tecnologías web y Python para sitios e integraciones.</p>
 				<div class="card stack-list">
 					<span class="badge">Swift · iOS</span>
-                    <span class="badge">Xcode</span>
-                    <span class="badge">HTML</span>
+					<span class="badge">Xcode</span>
+					<span class="badge">HTML</span>
 					<span class="badge">CSS moderno</span>
 					<span class="badge">JavaScript</span>
 					<span class="badge">Python</span>
-					<span class="badge">Automatizaciones</span>
+					<span class="badge" data-i18n="index.stack.automation">Automatizaciones</span>
 				</div>
 			</section>
 
-			<!-- NUEVA SECCIÓN: PROCESO -->
 			<section class="section fade-in intro-center">
-				<h2>¿Cómo trabajamos juntos?</h2>
-				<p class="lead">Un proceso compartido: definimos el alcance, revisamos avances y probamos antes de lanzar.</p>
+				<h2 data-i18n="index.process.title">¿Cómo trabajamos juntos?</h2>
+				<p class="lead" data-i18n="index.process.lead">Un proceso compartido: definimos el alcance, revisamos avances y probamos antes de lanzar.</p>
 				<div class="grid-3">
 					<article class="card process-card">
 						<div class="process-number">1</div>
-						<h3>Platícame tu idea</h3>
-						<p>Me cuentas qué quieres crear, para quién y qué debería poder hacer. Definimos las funciones de la primera versión, tiempos y presupuesto.</p>
+						<h3 data-i18n="index.process.1.title">Platícame tu idea</h3>
+						<p data-i18n="index.process.1.desc">Me cuentas qué quieres crear, para quién y qué debería poder hacer. Definimos las funciones de la primera versión, tiempos y presupuesto.</p>
 					</article>
 					<article class="card process-card">
 						<div class="process-number">2</div>
-						<h3>Diseño y construcción</h3>
-						<p>Diseño la experiencia y desarrollo una versión que puedas revisar. Compartimos avances y ajustamos los detalles dentro del alcance acordado.</p>
+						<h3 data-i18n="index.process.2.title">Diseño y construcción</h3>
+						<p data-i18n="index.process.2.desc">Diseño la experiencia y desarrollo una versión que puedas revisar. Compartimos avances y ajustamos los detalles dentro del alcance acordado.</p>
 					</article>
 					<article class="card process-card">
 						<div class="process-number">3</div>
-						<h3>Pruebas y lanzamiento</h3>
-						<p>Probamos las funciones y preparo la entrega o distribución según el proyecto. La publicación en las tiendas está sujeta a sus procesos de revisión.</p>
+						<h3 data-i18n="index.process.3.title">Pruebas y lanzamiento</h3>
+						<p data-i18n="index.process.3.desc">Probamos las funciones y preparo la entrega o distribución según el proyecto. La publicación en las tiendas está sujeta a sus procesos de revisión.</p>
 					</article>
 				</div>
 			</section>
 
-			<!-- NUEVA SECCIÓN: PRECIOS -->
 			<section id="precios" class="section fade-in intro-center">
-				<h2>Hagamos espacio para tu próxima idea</h2>
-				<p class="lead">Apps y juegos tienen alcances distintos. Partimos de tus funciones esenciales para preparar una propuesta clara.</p>
+				<h2 data-i18n="index.pricing.title">Hagamos espacio para tu próxima idea</h2>
+				<p class="lead" data-i18n="index.pricing.lead">Apps y juegos tienen alcances distintos. Partimos de tus funciones esenciales para preparar una propuesta clara.</p>
 
 				<div class="grid-2 primary-offers">
-                <article class="card price-card">
-					<div class="price-badge">Apps para iOS</div>
-					<h3>App para iPhone</h3>
-					<div class="price-range">Desde $1,900 <span>MXN</span></div>
-					<p class="price-desc">Una aplicación sencilla para convertir tu idea en una experiencia clara y profesional para iPhone.</p>
-					<ul class="price-list">
-						<li>✓ Diseño y desarrollo para iPhone</li>
-						<li>✓ Funciones sencillas y claras para tu idea</li>
-						<li>✓ Preparación y publicación en App Store</li>
-						<li>✗ Funciones complejas se cotizan según el alcance</li>
-					</ul>
-					<a class="btn" href="#contacto">Quiero crear mi app</a>
-				</article>
-                <article class="card price-card">
-                    <div class="price-badge">Juegos</div>
-                    <h3>Tu idea, en movimiento</h3>
-                    <div class="price-range">Cotización a medida</div>
-                    <p class="price-desc">El alcance depende de las mecánicas, plataformas, arte y funciones online que necesite tu juego.</p>
-                    <ul class="price-list"><li>✓ Definición de una primera versión jugable</li><li>✓ Desarrollo de mecánicas y controles</li><li>✓ Pruebas y ajustes de la experiencia</li><li>✓ Contenido y servicios acordados por proyecto</li></ul>
-                    <a class="btn" href="#contacto">Hablemos de mi juego</a>
-                </article>
-                </div>
-                <details id="opciones-web" class="web-pricing">
-                    <summary>Desarrollo web, automatización y mantenimiento · Ver precios</summary>
-
-
-				<div class="grid-3">
 					<article class="card price-card">
-						<div class="price-badge">Sitios web</div>
-						<h3>Página de presentación</h3>
-						<div class="price-range">Desde $2,000 <span>MXN</span></div>
-						<p class="price-desc">Una página moderna donde explicas lo que haces, muestras confianza y recibes mensajes de clientes interesados.</p>
+						<div class="price-badge" data-i18n="index.pricing.ios.badge">Apps para iOS</div>
+						<h3 data-i18n="index.pricing.app.title">App para iPhone</h3>
+						<div class="price-range" data-i18n="index.pricing.app.range">Desde $1,900 <span>MXN</span></div>
+						<p class="price-desc" data-i18n="index.pricing.app.desc">Una aplicación sencilla para convertir tu idea en una experiencia clara y profesional para iPhone.</p>
 						<ul class="price-list">
-							<li>✓ Diseño moderno y responsive</li>
-							<li>✓ Formulario de contacto</li>
-							<li>✓ Estructura clara para vender</li>
-							<li>✗ No incluye dominio ni hosting</li>
+							<li data-i18n="index.pricing.app.li1">✓ Diseño y desarrollo para iPhone</li>
+							<li data-i18n="index.pricing.app.li2">✓ Funciones sencillas y claras para tu idea</li>
+							<li data-i18n="index.pricing.app.li3">✓ Preparación y publicación en App Store</li>
+							<li data-i18n="index.pricing.app.li4">✗ Funciones complejas se cotizan según el alcance</li>
 						</ul>
-						<a class="btn" href="#contacto">Quiero esta opción</a>
+						<a class="btn" href="#contacto" data-i18n="index.pricing.app.cta">Quiero crear mi app</a>
 					</article>
 
 					<article class="card price-card">
-						<h3>Sitio web completo</h3>
-						<div class="price-range">Desde $4,500 <span>MXN</span></div>
-						<p class="price-desc">Varias secciones bien organizadas para que tu negocio se vea profesional: inicio, servicios, contacto y más.</p>
+						<div class="price-badge" data-i18n="index.pricing.game.badge">Juegos</div>
+						<h3 data-i18n="index.pricing.game.title">Tu idea, en movimiento</h3>
+						<div class="price-range" data-i18n="index.pricing.game.range">Cotización a medida</div>
+						<p class="price-desc" data-i18n="index.pricing.game.desc">El alcance depende de las mecánicas, plataformas, arte y funciones online que necesite tu juego.</p>
 						<ul class="price-list">
-							<li>✓ 3 a 5 secciones organizadas</li>
-							<li>✓ Diseño adaptado a tu marca</li>
-							<li>✓ Formulario de contacto</li>
-							<li>✗ No incluye dominio ni hosting</li>
+							<li data-i18n="index.pricing.game.li1">✓ Definición de una primera versión jugable</li>
+							<li data-i18n="index.pricing.game.li2">✓ Desarrollo de mecánicas y controles</li>
+							<li data-i18n="index.pricing.game.li3">✓ Pruebas y ajustes de la experiencia</li>
+							<li data-i18n="index.pricing.game.li4">✓ Contenido y servicios acordados por proyecto</li>
 						</ul>
-						<a class="btn" href="#contacto">Quiero esta opción</a>
-					</article>
-
-					<article class="card price-card">
-						<h3>Web enfocada a ventas</h3>
-						<div class="price-range">Desde $6,500 <span>MXN</span></div>
-						<p class="price-desc">Diseñada estratégicamente para convertir visitas en clientes reales, con estructura y mensajes orientados a vender.</p>
-						<ul class="price-list">
-							<li>✓ Estructura estratégica de ventas</li>
-							<li>✓ Llamadas a la acción efectivas</li>
-							<li>✓ Enfoque comercial avanzado</li>
-							<li>✗ No incluye dominio ni hosting</li>
-						</ul>
-						<a class="btn" href="#contacto">Quiero esta opción</a>
+						<a class="btn" href="#contacto" data-i18n="index.pricing.game.cta">Hablemos de mi juego</a>
 					</article>
 				</div>
 
-				<div class="grid-2 price-extra">
-					<article class="card price-card">
-						<h3>Automatización de tareas</h3>
-						<div class="price-range">Desde $500 <span>MXN</span></div>
-						<p class="price-desc">Formularios inteligentes, correos automáticos e integraciones simples para que no tengas que hacer todo a mano.</p>
-						<ul class="price-list">
-							<li>✓ Formularios automáticos</li>
-							<li>✓ Envío de correos sin intervención</li>
-							<li>✗ No incluye costos de servicios externos</li>
-						</ul>
-						<a class="btn secondary" href="#contacto">Me interesa</a>
-					</article>
+				<div id="opciones-web" class="web-pricing">
+					<h3 class="web-pricing-title" data-i18n="index.pricing.web.title">Desarrollo web, automatización y mantenimiento</h3>
 
-					<article class="card price-card">
-						<h3>Mantenimiento mensual</h3>
-						<div class="price-range">Desde $240 <span>MXN / mes</span></div>
-						<p class="price-desc">Ajustes, cambios pequeños y soporte continuo para que tu web siempre esté funcionando bien y actualizada.</p>
-						<ul class="price-list">
-							<li>✓ Cambios y ajustes incluidos</li>
-							<li>✓ Soporte directo por WhatsApp</li>
-							<li>✓ Tranquilidad de que todo funciona</li>
-						</ul>
-						<a class="btn secondary" href="#contacto">Me interesa</a>
-					</article>
-				</div>
+					<div class="grid-3">
+						<article class="card price-card">
+							<div class="price-badge" data-i18n="index.pricing.web.presentation.badge">Sitios web</div>
+							<h3 data-i18n="index.pricing.web.presentation.title">Página de presentación</h3>
+							<div class="price-range" data-i18n="index.pricing.web.presentation.range">Desde $2,000 <span>MXN</span></div>
+							<p class="price-desc" data-i18n="index.pricing.web.presentation.desc">Una página moderna donde explicas lo que haces, muestras confianza y recibes mensajes de clientes interesados.</p>
+							<ul class="price-list">
+								<li data-i18n="index.pricing.web.presentation.li1">✓ Diseño moderno y responsive</li>
+								<li data-i18n="index.pricing.web.presentation.li2">✓ Formulario de contacto</li>
+								<li data-i18n="index.pricing.web.presentation.li3">✓ Estructura clara para vender</li>
+								<li data-i18n="index.pricing.web.presentation.li4">✗ No incluye dominio ni hosting</li>
+							</ul>
+							<a class="btn" href="#contacto" data-i18n="index.pricing.web.presentation.cta">Quiero esta opción</a>
+						</article>
 
-				<div class="card price-note fade-in">
-					<h3>Costos adicionales que debes saber</h3>
-					<p>
-						Son servicios externos como el dominio (por ejemplo, www.ejemplo.com), seguridad y hosting, que tú contratas directamente.
-					</p>
-					<p>
-						Yo me encargo de configurarlo por ti; es decir, la mano de obra de configuración ya viene incluida en el precio.
-					</p>
-					<ul class="price-list">
-						<li>🌐 <strong>Dominio web</strong> (tu dirección en internet, ej: tunegocio.com): ~ desde $200 MXN al año según extensión.</li>
-						<li>🔒 <strong>Seguridad y velocidad</strong> (Cloudflare): versión básica totalmente gratis, planes avanzados opcionales.</li>
-						<li>🖥️ <strong>Hosting</strong> (donde vive tu web): puede ser gratuito o con costo según el proyecto.</li>
-					</ul>
+						<article class="card price-card">
+							<h3 data-i18n="index.pricing.web.site.title">Sitio web completo</h3>
+							<div class="price-range" data-i18n="index.pricing.web.site.range">Desde $4,500 <span>MXN</span></div>
+							<p class="price-desc" data-i18n="index.pricing.web.site.desc">Varias secciones bien organizadas para que tu negocio se vea profesional: inicio, servicios, contacto y más.</p>
+							<ul class="price-list">
+								<li data-i18n="index.pricing.web.site.li1">✓ 3 a 5 secciones organizadas</li>
+								<li data-i18n="index.pricing.web.site.li2">✓ Diseño adaptado a tu marca</li>
+								<li data-i18n="index.pricing.web.site.li3">✓ Formulario de contacto</li>
+								<li data-i18n="index.pricing.web.site.li4">✗ No incluye dominio ni hosting</li>
+							</ul>
+							<a class="btn" href="#contacto" data-i18n="index.pricing.web.site.cta">Quiero esta opción</a>
+						</article>
+
+						<article class="card price-card">
+							<h3 data-i18n="index.pricing.web.sales.title">Web enfocada a ventas</h3>
+							<div class="price-range" data-i18n="index.pricing.web.sales.range">Desde $6,500 <span>MXN</span></div>
+							<p class="price-desc" data-i18n="index.pricing.web.sales.desc">Diseñada estratégicamente para convertir visitas en clientes reales, con estructura y mensajes orientados a vender.</p>
+							<ul class="price-list">
+								<li data-i18n="index.pricing.web.sales.li1">✓ Estructura estratégica de ventas</li>
+								<li data-i18n="index.pricing.web.sales.li2">✓ Llamadas a la acción efectivas</li>
+								<li data-i18n="index.pricing.web.sales.li3">✓ Enfoque comercial avanzado</li>
+								<li data-i18n="index.pricing.web.sales.li4">✗ No incluye dominio ni hosting</li>
+							</ul>
+							<a class="btn" href="#contacto" data-i18n="index.pricing.web.sales.cta">Quiero esta opción</a>
+						</article>
+					</div>
+
+					<div class="grid-2 price-extra">
+						<article class="card price-card">
+							<h3 data-i18n="index.pricing.web.auto.title">Automatización de tareas</h3>
+							<div class="price-range" data-i18n="index.pricing.web.auto.range">Desde $500 <span>MXN</span></div>
+							<p class="price-desc" data-i18n="index.pricing.web.auto.desc">Formularios inteligentes, correos automáticos e integraciones simples para que no tengas que hacer todo a mano.</p>
+							<ul class="price-list">
+								<li data-i18n="index.pricing.web.auto.li1">✓ Formularios automáticos</li>
+								<li data-i18n="index.pricing.web.auto.li2">✓ Envío de correos sin intervención</li>
+								<li data-i18n="index.pricing.web.auto.li3">✗ No incluye costos de servicios externos</li>
+							</ul>
+							<a class="btn secondary" href="#contacto" data-i18n="index.pricing.web.auto.cta">Me interesa</a>
+						</article>
+
+						<article class="card price-card">
+							<h3 data-i18n="index.pricing.web.maintenance.title">Mantenimiento mensual</h3>
+							<div class="price-range" data-i18n="index.pricing.web.maintenance.range">Desde $240 <span>MXN / mes</span></div>
+							<p class="price-desc" data-i18n="index.pricing.web.maintenance.desc">Ajustes, cambios pequeños y soporte continuo para que tu web siempre esté funcionando bien y actualizada.</p>
+							<ul class="price-list">
+								<li data-i18n="index.pricing.web.maintenance.li1">✓ Cambios y ajustes incluidos</li>
+								<li data-i18n="index.pricing.web.maintenance.li2">✓ Soporte directo por WhatsApp</li>
+								<li data-i18n="index.pricing.web.maintenance.li3">✓ Tranquilidad de que todo funciona</li>
+							</ul>
+							<a class="btn secondary" href="#contacto" data-i18n="index.pricing.web.maintenance.cta">Me interesa</a>
+						</article>
+					</div>
+
+					<div class="card price-note fade-in">
+						<h3 data-i18n="index.pricing.extra.title">Costos adicionales que debes saber</h3>
+						<p data-i18n="index.pricing.extra.p1">Son servicios externos como el dominio (por ejemplo, www.ejemplo.com), seguridad y hosting, que tú contratas directamente.</p>
+						<p data-i18n="index.pricing.extra.p2">Yo me encargo de configurarlo por ti; es decir, la mano de obra de configuración ya viene incluida en el precio.</p>
+						<ul class="price-list">
+							<li data-i18n="index.pricing.extra.li1">🌐 <strong>Dominio web</strong> (tu dirección en internet, ej: tunegocio.com): ~ desde $200 MXN al año según extensión.</li>
+							<li data-i18n="index.pricing.extra.li2">🔒 <strong>Seguridad y velocidad</strong> (Cloudflare): versión básica totalmente gratis, planes avanzados opcionales.</li>
+							<li data-i18n="index.pricing.extra.li3">🖥️ <strong>Hosting</strong> (donde vive tu web): puede ser gratuito o con costo según el proyecto.</li>
+						</ul>
+					</div>
 				</div>
-                </details>
 			</section>
 
 			<section id="contacto" class="section">
-				<h2>Cuéntame tu idea y te escribo</h2>
-				<p class="lead">¿Una app, un juego o un proyecto web? Cuéntame a quién va dirigido y qué te gustaría construir.</p>
-
+				<h2 data-i18n="index.contact.title">Cuéntame tu idea y te escribo</h2>
+				<p class="lead" data-i18n="index.contact.lead">¿Una app, un juego o un proyecto web? Cuéntame a quién va dirigido y qué te gustaría construir.</p>
 				<div class="contact-wrap">
 					<aside class="card contact-box">
-						<h3>Contacto directo</h3>
-						<p><strong>Nombre:</strong> Sebastian Clark</p>
-						<p><strong>Teléfono:</strong> <a href="tel:+526623255194">+52 662 325 5194</a></p>
-						<p>
-							<strong>Correo:</strong>
-							<a href="mailto:cotizacion@sebastianclark.mx">cotizacion@sebastianclark.mx</a>
-						</p>
-						<p class="form-note">
-							Puedes contactarme por formulario, llamada o WhatsApp. Te respondo con una propuesta clara.
-						</p>
+						<h3 data-i18n="index.contact.direct">Contacto directo</h3>
+						<p data-i18n="index.contact.name"><strong>Nombre:</strong> Sebastian Clark</p>
+						<p data-i18n="index.contact.phone"><strong>Teléfono:</strong> <a href="tel:+526623255194">+52 662 325 5194</a></p>
+						<p data-i18n="index.contact.email"><strong>Correo:</strong> <a href="mailto:cotizacion@sebastianclark.mx">cotizacion@sebastianclark.mx</a></p>
+						<p class="form-note" data-i18n="index.contact.note">Puedes contactarme por formulario, llamada o WhatsApp. Te respondo con una propuesta clara.</p>
 					</aside>
 
 					<form class="card contact-form" id="contactForm" onsubmit="return false">
-						<label for="clientName">Nombre</label>
-						<input type="text" id="clientName" name="clientName" placeholder="Tu nombre completo" required />
+						<label for="clientName" data-i18n="index.form.name">Nombre</label>
+						<input type="text" id="clientName" name="clientName" placeholder="Tu nombre completo" data-i18n-placeholder="index.form.name.placeholder" required />
 
-						<label for="clientEmail">Correo</label>
-						<input type="email" id="clientEmail" name="clientEmail" placeholder="tu@correo.com" required />
+						<label for="clientEmail" data-i18n="index.form.email">Correo</label>
+						<input type="email" id="clientEmail" name="clientEmail" placeholder="tu@correo.com" data-i18n-placeholder="index.form.email.placeholder" required />
 
-						<label for="clientPhone">Teléfono (opcional)</label>
-						<input type="tel" id="clientPhone" name="clientPhone" placeholder="Ejemplo: 662 000 0000" />
+						<label for="clientPhone" data-i18n="index.form.phone">Teléfono (opcional)</label>
+						<input type="tel" id="clientPhone" name="clientPhone" placeholder="Ejemplo: 662 000 0000" data-i18n-placeholder="index.form.phone.placeholder" />
 
-						<label for="serviceType">Servicio de interés</label>
+						<label for="serviceType" data-i18n="index.form.service">Servicio de interés</label>
 						<select id="serviceType" name="serviceType" required>
-							<option value="" disabled selected>Selecciona una opción</option>
-							<option value="Desarrollo de app para iPhone">Desarrollo de app para iPhone</option>
-                            <option value="Desarrollo de juego">Desarrollo de juego</option>
-                            <option value="Página de presentación">Página de presentación</option>
-							<option value="Sitio para empresa">Sitio para empresa</option>
-							<option value="Automatización de procesos">Automatización de procesos</option>
-							<option value="Asesoría">Asesoría</option>
+							<option value="" disabled selected data-i18n="index.form.service.placeholder">Selecciona una opción</option>
+							<option value="Desarrollo de app para iPhone" data-i18n="index.form.service.app">Desarrollo de app para iPhone</option>
+							<option value="Desarrollo de juego" data-i18n="index.form.service.game">Desarrollo de juego</option>
+							<option value="Página de presentación" data-i18n="index.form.service.presentation">Página de presentación</option>
+							<option value="Sitio para empresa" data-i18n="index.form.service.site">Sitio para empresa</option>
+							<option value="Automatización de procesos" data-i18n="index.form.service.automation">Automatización de procesos</option>
+							<option value="Asesoría" data-i18n="index.form.service.consulting">Asesoría</option>
 						</select>
 
-						<label for="clientMessage">Mensaje</label>
-						<textarea
-							id="clientMessage"
-							name="clientMessage"
-							placeholder="Cuéntame qué necesitas y qué objetivo quieres lograr"
-							required
-						></textarea>
-
+						<label for="clientMessage" data-i18n="index.form.message">Mensaje</label>
+						<textarea id="clientMessage" name="clientMessage" placeholder="Cuéntame qué necesitas y qué objetivo quieres lograr" data-i18n-placeholder="index.form.message.placeholder" required></textarea>
 						<input class="hp-field" type="text" id="website" name="website" tabindex="-1" autocomplete="off" aria-hidden="true" />
-
-						<button class="btn" id="submitButton" type="submit">Enviar mensaje</button>
+						<button class="btn" id="submitButton" type="submit" data-i18n="index.form.submit">Enviar mensaje</button>
 						<p id="formStatus" class="form-note" aria-live="polite"></p>
 					</form>
 				</div>
 			</section>
 		</main>
 
-		<!-- WHATSAPP FLOTANTE -->
-		<a
-			class="whatsapp-float"
-			href="https://wa.me/526623255194?text=Hola%20Sebastian%2C%20vi%20tu%20p%C3%A1gina%20y%20me%20interesa%20saber%20m%C3%A1s."
-			target="_blank"
-			rel="noopener noreferrer"
-			aria-label="Contactar por WhatsApp"
-		>
-			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="28" height="28">
-				<path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+		<a class="whatsapp-float" href="https://wa.me/526623255194?text=Hola%20Sebastian%2C%20vi%20tu%20p%C3%A1gina%20y%20me%20interesa%20saber%20m%C3%A1s." target="_blank" rel="noopener noreferrer" aria-label="Contactar por WhatsApp">
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="28" height="28" aria-hidden="true">
+				<path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
 			</svg>
 			<span>WhatsApp</span>
 		</a>
 
-		<footer class="container">
-			© 2026 Sebastian Clark · Apps y juegos con atención al detalle. También desarrollo web.
-			· <a href="legal.html">Aviso Legal</a>
-			· <a href="app-privacy.html">Aviso de privacidad de apps</a>
-		</footer>
+		<footer class="container" data-i18n="index.footer">© 2026 Sebastian Clark · Apps y juegos con atención al detalle. También desarrollo web. · <a href="legal.html">Aviso Legal</a> · <a href="app-privacy.html">Aviso de privacidad de apps</a></footer>
 
 		<script>
-			window.addEventListener("DOMContentLoaded", function () {
+			window.addEventListener('DOMContentLoaded', function () {
+				var contactForm = document.getElementById('contactForm');
+				var formStatus = document.getElementById('formStatus');
+				var submitButton = document.getElementById('submitButton');
 
-				var contactForm = document.getElementById("contactForm");
-				var formStatus = document.getElementById("formStatus");
-				var submitButton = document.getElementById("submitButton");
+				function text(key, fallback) {
+					return window.SiteI18n ? window.SiteI18n.t(key) : fallback;
+				}
 
 				function getMetaContent(name) {
 					var meta = document.querySelector('meta[name="' + name + '"]');
-					return meta ? meta.content.trim() : "";
+					return meta ? meta.content.trim() : '';
 				}
 
-				// Fade-in al scroll
-				var fadeEls = document.querySelectorAll(".fade-in");
-				if ("IntersectionObserver" in window && fadeEls.length) {
-					var observer = new IntersectionObserver(
-						function (entries) {
-							entries.forEach(function (entry) {
-								if (entry.isIntersecting) {
-									entry.target.classList.add("visible");
-									observer.unobserve(entry.target);
-								}
-							});
-						},
-						{ threshold: 0.12 }
-					);
-					fadeEls.forEach(function (el) {
-						observer.observe(el);
-					});
+				var fadeEls = document.querySelectorAll('.fade-in');
+				if ('IntersectionObserver' in window && fadeEls.length) {
+					var observer = new IntersectionObserver(function (entries) {
+						entries.forEach(function (entry) {
+							if (entry.isIntersecting) {
+								entry.target.classList.add('visible');
+								observer.unobserve(entry.target);
+							}
+						});
+					}, { threshold: 0.12 });
+					fadeEls.forEach(function (el) { observer.observe(el); });
 				} else {
-					fadeEls.forEach(function (el) {
-						el.classList.add("visible");
-					});
+					fadeEls.forEach(function (el) { el.classList.add('visible'); });
 				}
 
 				if (!contactForm || !formStatus || !submitButton) return;
 				if (!window.emailjs) {
-					formStatus.textContent = "No se pudo cargar el sistema de envío. Intenta recargar la página.";
-					formStatus.className = "form-note error";
+					formStatus.textContent = text('form.load_error', 'No se pudo cargar el sistema de envío. Intenta recargar la página.');
+					formStatus.className = 'form-note error';
 					return;
 				}
 
-				var EMAILJS_PUBLIC_KEY = getMetaContent("emailjs-public-key");
-				var EMAILJS_SERVICE_ID = getMetaContent("emailjs-service-id");
-				var EMAILJS_TEMPLATE_ID = getMetaContent("emailjs-template-id");
-
-				var hasValidPublicKey = EMAILJS_PUBLIC_KEY && !EMAILJS_PUBLIC_KEY.startsWith("PEGA_AQUI_");
+				var EMAILJS_PUBLIC_KEY = getMetaContent('emailjs-public-key');
+				var EMAILJS_SERVICE_ID = getMetaContent('emailjs-service-id');
+				var EMAILJS_TEMPLATE_ID = getMetaContent('emailjs-template-id');
+				var hasValidPublicKey = EMAILJS_PUBLIC_KEY && !EMAILJS_PUBLIC_KEY.startsWith('PEGA_AQUI_');
 				var hasValidServiceId = /^service_[a-z0-9]+$/i.test(EMAILJS_SERVICE_ID);
 				var hasValidTemplateId = /^template_[a-z0-9]+$/i.test(EMAILJS_TEMPLATE_ID);
 
 				if (!hasValidPublicKey || !hasValidServiceId || !hasValidTemplateId) {
-					formStatus.textContent = "Revisa la configuración de EmailJS: Public Key, Service ID o Template ID.";
-					formStatus.className = "form-note error";
+					formStatus.textContent = text('form.config_error', 'Revisa la configuración del formulario de contacto.');
+					formStatus.className = 'form-note error';
 					submitButton.disabled = true;
 					return;
 				}
@@ -517,92 +412,77 @@
 				try {
 					window.emailjs.init({ publicKey: EMAILJS_PUBLIC_KEY });
 				} catch (error) {
-					formStatus.textContent = "Error al iniciar EmailJS. Revisa tu public key.";
-					formStatus.className = "form-note error";
+					formStatus.textContent = text('form.init_error', 'No se pudo iniciar el sistema de envío. Intenta de nuevo más tarde.');
+					formStatus.className = 'form-note error';
 					return;
 				}
 
 				var isSubmitting = false;
-
-				contactForm.addEventListener("submit", function (event) {
+				contactForm.addEventListener('submit', function (event) {
 					event.preventDefault();
 					if (isSubmitting) return;
 
-					var botField = document.getElementById("website");
-					if (botField && botField.value.trim() !== "") return;
+					var botField = document.getElementById('website');
+					if (botField && botField.value.trim() !== '') return;
 
-					var name = document.getElementById("clientName").value.trim();
-					var email = document.getElementById("clientEmail").value.trim();
-					var phone = document.getElementById("clientPhone").value.trim();
-					var service = document.getElementById("serviceType").value;
-					var message = document.getElementById("clientMessage").value.trim();
+					var name = document.getElementById('clientName').value.trim();
+					var email = document.getElementById('clientEmail').value.trim();
+					var phone = document.getElementById('clientPhone').value.trim();
+					var service = document.getElementById('serviceType').value;
+					var message = document.getElementById('clientMessage').value.trim();
 
 					if (!name || !email || !service || !message) {
-						formStatus.textContent = "Completa todos los campos obligatorios, por favor.";
-						formStatus.className = "form-note error";
+						formStatus.textContent = text('form.required', 'Completa todos los campos obligatorios, por favor.');
+						formStatus.className = 'form-note error';
 						return;
 					}
 
-					var emailOk = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
-					if (!emailOk) {
-						formStatus.textContent = "Escribe un correo válido.";
-						formStatus.className = "form-note error";
+					if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+						formStatus.textContent = text('form.email_invalid', 'Escribe un correo válido.');
+						formStatus.className = 'form-note error';
 						return;
 					}
 
 					isSubmitting = true;
 					submitButton.disabled = true;
-					submitButton.setAttribute("aria-busy", "true");
-					submitButton.textContent = "Enviando...";
-					formStatus.textContent = "Enviando tu mensaje...";
-					formStatus.className = "form-note";
+					submitButton.setAttribute('aria-busy', 'true');
+					submitButton.textContent = text('form.sending_button', 'Enviando…');
+					formStatus.textContent = text('form.sending', 'Enviando tu mensaje…');
+					formStatus.className = 'form-note';
 
 					var templateParams = {
-						title: "Nuevo contacto desde la web",
+						title: 'Nuevo contacto desde la web',
 						name: name,
 						email: email,
-						time: new Date().toLocaleString("es-MX"),
-						message:
-							"Servicio: " +
-							service +
-							"\nTeléfono: " +
-							(phone || "No compartido") +
-							"\n\nMensaje:\n" +
-							message,
+						time: new Date().toLocaleString(window.SiteI18n && window.SiteI18n.language === 'en' ? 'en-US' : 'es-MX'),
+						message: 'Servicio: ' + service + '\nTeléfono: ' + (phone || 'No compartido') + '\n\nMensaje:\n' + message,
 						from_name: name,
 						from_email: email,
-						from_phone: phone || "No compartido",
+						from_phone: phone || 'No compartido',
 						service_type: service,
-						to_email: "cotizacion@sebastianclark.mx",
+						to_email: 'cotizacion@sebastianclark.mx'
 					};
 
-					window.emailjs
-						.send(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, templateParams)
+					window.emailjs.send(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, templateParams)
 						.then(function () {
-							formStatus.textContent = "¡Listo! Tu mensaje ya fue enviado. Te responderé pronto.";
-							formStatus.className = "form-note success";
+							formStatus.textContent = text('form.success', '¡Listo! Tu mensaje ya fue enviado. Te responderé pronto.');
+							formStatus.className = 'form-note success';
 							contactForm.reset();
 						})
 						.catch(function (error) {
-							console.error("EmailJS error:", error);
-
-							var errorText = (error && (error.text || error.message || "")).toString().toLowerCase();
-							var originIssue =
-								(error && (error.status === 403 || error.status === 412)) ||
-								errorText.includes("origin") ||
-								errorText.includes("domain") ||
-								errorText.includes("forbidden");
-
+							console.error('EmailJS error:', error);
+							var errorText = (error && (error.text || error.message || '')).toString().toLowerCase();
+							var originIssue = (error && (error.status === 403 || error.status === 412)) || errorText.includes('origin') || errorText.includes('domain') || errorText.includes('forbidden');
 							formStatus.textContent = originIssue
-								? "No autorizado por dominio. Revisa Allowed Origins en EmailJS para sebastianclark.mx."
-								: "No se pudo enviar. Verifica Service/Template IDs y que el template use las variables correctas.";
-							formStatus.className = "form-note error";
+								? text('form.domain_error', 'El formulario de contacto aún no está autorizado para este dominio.')
+								: text('form.send_error', 'No se pudo enviar tu mensaje. Intenta de nuevo más tarde.');
+							formStatus.className = 'form-note error';
 						})
 						.finally(function () {
 							isSubmitting = false;
 							submitButton.disabled = false;
-							submitButton.removeAttribute("aria-busy");
-							submitButton.textContent = "Enviar mensaje";
+							submitButton.removeAttribute('aria-busy');
+							submitButton.textContent = text('form.submit', 'Enviar mensaje');
 						});
 				});
 			});
