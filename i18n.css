@@ -82,7 +82,8 @@
    iPhone / móvil
    - navegación en una cuadrícula limpia de dos columnas
    - último elemento centrado si la cantidad de enlaces es impar
-   - selector ES/EN en una fila independiente con divisor degradado
+   - divisor degradado en una fila completa
+   - selector ES/EN centrado debajo del divisor
 */
 @media (max-width: 930px) {
   .site-header {
@@ -139,14 +140,15 @@
     justify-self: center;
   }
 
-  /* El idioma ya no forma parte de la cuadrícula de navegación. */
+  /* El selector ocupa su propia sección debajo de toda la navegación. */
   .language-switcher {
     grid-column: 1 / -1;
     display: grid;
-    grid-template-columns: minmax(0, 1fr) auto auto;
+    grid-template-columns: auto auto;
+    justify-content: center;
     align-items: center;
     width: 100%;
-    margin: 0.1rem 0 0;
+    margin: 0.35rem 0 0;
     padding: 0;
     gap: 0;
     border: 0;
@@ -157,12 +159,14 @@
     -webkit-backdrop-filter: none;
   }
 
+  /* Divisor completo arriba; los botones quedan en una fila inferior. */
   .language-switcher::before {
     content: "";
+    grid-column: 1 / -1;
     display: block;
+    width: 100%;
     height: 1px;
-    min-width: 0;
-    margin-right: 0.85rem;
+    margin: 0 0 0.85rem;
     border-radius: 999px;
     background: linear-gradient(
       90deg,
@@ -223,7 +227,7 @@
   }
 
   .language-switcher::before {
-    margin-right: 0.68rem;
+    margin-bottom: 0.72rem;
   }
 
   .language-switcher button {
