@@ -4,80 +4,90 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Aviso de privacidad de apps | Sebastian Clark</title>
-		<meta
-			name="description"
-			content="Aviso de privacidad de las aplicaciones creadas por Sebastian Clark."
-		/>
+		<meta name="description" content="Aviso de privacidad de las aplicaciones creadas por Sebastian Clark." />
 		<meta name="theme-color" content="#0f172a" />
 		<link rel="canonical" href="https://sebastianclark.mx/app-privacy.html" />
 		<meta name="robots" content="index,follow,max-image-preview:large" />
 		<link rel="stylesheet" href="styles.css" />
+		<link rel="stylesheet" href="i18n.css" />
 		<link rel="icon" type="image/svg+xml" href="favicon.svg?v=5" sizes="any" />
+		<script src="i18n.js" defer></script>
 	</head>
-	<body>
+	<body data-page="privacy">
 		<header class="site-header">
 			<nav class="container nav">
 				<div class="brand">Sebastian <span>Clark</span></div>
 				<div class="nav-links">
-					<a href="games.html">Juegos</a>
-					<a href="index.html">Inicio</a>
-					<a href="apps.html">Apps hechas por mí</a>
-					<a href="index.html#contacto">Contacto</a>
+					<a href="games.html" data-i18n="nav.games">Juegos</a>
+					<a href="index.html" data-i18n="nav.home">Inicio</a>
+					<a href="apps.html" data-i18n="nav.apps">Apps hechas por mí</a>
+					<a href="index.html#contacto" data-i18n="nav.contact">Contacto</a>
 				</div>
 			</nav>
 		</header>
 
-        <main class="container">
-            <section class="section legal-content">
-                <a class="btn secondary legal-back" href="apps.html">← Volver a las apps</a>
-                <h1>Aviso de privacidad de aplicaciones</h1>
-                <p>Última actualización: 7 de septiembre de 2026</p>
-                <div class="card">
-                    <h2>Resumen claro</h2>
-                    <p>Cada aplicación tiene prácticas distintas. Spendly Travel mantiene sus datos de viaje en el dispositivo. Operator Ops utiliza servicios de Apple para las pruebas y el multijugador; contempla chat de voz y futuras compras dentro de la app. Estos servicios implican el tratamiento de los datos que se describen a continuación.</p>
-                    <p><a href="#spendly-travel">Spendly Travel</a> · <a href="#operator-ops">Operator Ops</a></p>
-                </div>
-                <h2>Responsable y contacto</h2>
-                <p>El responsable es <strong>Sebastian Clark Valenzuela</strong>. Para consultas y solicitudes de acceso, rectificación, eliminación u oposición, escribe a <a href="mailto:cotizacion@sebastianclark.mx">cotizacion@sebastianclark.mx</a>, indicando la aplicación y tu solicitud. No envíes contraseñas ni datos bancarios.</p>
-                <h2 id="spendly-travel">Spendly Travel</h2>
-                <p>Aplicación para organizar viajes, presupuestos y gastos. No recopila datos personales ni datos de uso para el desarrollador. Los datos que introduces permanecen en tu dispositivo; Sebastian Clark no los recibe ni puede acceder a ellos.</p>
-                <p>No incorpora cuentas propias, publicidad, analítica ni rastreo. No vende ni comparte tus datos, ni solicita acceso a contactos, fotos, audio o ubicación. No incluye suscripciones ni compras dentro de la app.</p>
-                <p>Puedes eliminar la información local desde los controles disponibles o al eliminar la aplicación. No existe una cuenta de Spendly Travel ni un registro remoto de tus viajes que solicitar eliminar al desarrollador.</p>
-                <h2 id="operator-ops">Operator Ops</h2>
-                <p>Juego en desarrollo distribuido en beta mediante TestFlight. La integración multijugador se basa principalmente en Apple Game Center. El chat de voz y las compras con dinero real son funciones previstas; su descripción no significa que estén disponibles en todas las versiones de prueba.</p>
-                <h3>Datos del juego y matchmaking</h3>
-                <p>Para identificar a los participantes y organizar las sesiones, el juego utiliza el identificador de jugador y el nombre visible facilitados por Game Center. Intercambia información necesaria del lobby, como participantes, equipos, nivel y estado de preparación. El progreso, las preferencias y el inventario se guardan en el dispositivo; la información necesaria para las funciones multijugador se comunica a través de los servicios de Apple y a los participantes de la sesión.</p>
-                <p>Apple trata datos de cuenta y actividad de juego conforme a su propia política. La visibilidad de tu perfil y actividad depende de tus ajustes de Game Center. Usar Game Center no significa que Operator Ops acceda automáticamente a todos los datos que Apple puede gestionar.</p>
-                <h3>Chat de voz previsto</h3>
-                <p>Cuando esté disponible, el chat de voz requerirá permiso de micrófono. Al activarlo, tu voz se transmitirá a los participantes del canal o de la partida mediante la integración de Apple. Puedes denegar o revocar el permiso en los ajustes del dispositivo. No compartas información personal o sensible por voz: otros participantes pueden escucharla y podrían grabarla por sus propios medios.</p>
-                <p>Antes de habilitar esta función se actualizará este aviso con sus prácticas definitivas de tratamiento y conservación de audio, incluida cualquier grabación o moderación que se implemente.</p>
-                <h3>Futuras compras dentro de la app</h3>
-                <p>Se contemplan compras opcionales con dinero real, procesadas por Apple mediante App Store y StoreKit. El juego utilizará datos del producto, la transacción y su estado para validar la compra, entregar el contenido y reconocer los derechos que correspondan. Los precios y condiciones aparecerán antes de confirmar una compra.</p>
-                <p>El desarrollador no recibe el número completo de tu tarjeta, su código de seguridad ni tu contraseña de Apple. Apple gestiona los datos de pago conforme a sus propias políticas. Las compras de prueba de TestFlight se realizan en un entorno de pruebas; no equivalen a compras reales para la versión comercial.</p>
-                <h3>Pruebas y diagnósticos de TestFlight</h3>
-                <p>Apple recopila información de uso de la beta y fallos, y la comparte con el desarrollador para mejorar el juego. Puede incluir versión de la app y del sistema, modelo de dispositivo, sesiones e informes de errores. También recibimos los comentarios y capturas que decidas enviar.</p>
-                <p>Al unirte únicamente mediante el enlace público, Apple no muestra tu nombre ni correo al desarrollador como datos de la invitación. Evita incluir información sensible en tus comentarios o capturas.</p>
-                <h3>Datos que no se solicitan y publicidad</h3>
-                <p>Operator Ops no requiere que entregues al desarrollador tu contraseña de Apple ni datos de tarjeta. El matchmaking no requiere facilitarle tu agenda, fotografías o ubicación precisa. El permiso de micrófono corresponderá al chat de voz, no al matchmaking.</p>
-                <p>No se prevén anuncios en esta etapa. No se utilizarán los datos descritos para publicidad dirigida ni para venderlos. Si se incorporan anuncios u otros servicios con prácticas distintas, se actualizará este aviso antes de habilitarlos.</p>
-                <h3>Conservación y controles</h3>
-                <p>Los datos locales pueden eliminarse con la aplicación, sin que ello elimine los registros de Game Center, TestFlight o compras que conserva Apple. Puedes gestionar la visibilidad de tu actividad y las opciones sociales en los ajustes de Game Center, y dejar de probar la beta desde TestFlight.</p>
-                <p>Los diagnósticos y comentarios recibidos se utilizan para investigar errores y mejorar la beta. Apple indica que conserva los comentarios de TestFlight durante un año y puede conservar diagnósticos y datos de uso hasta resolver los errores. Para solicitar acceso o eliminación de información recibida por el desarrollador, utiliza el contacto de este aviso; los datos bajo control de Apple se gestionan también desde <a href="https://privacy.apple.com/">Datos y privacidad de Apple</a>.</p>
-                <h3>Menores y funciones sociales</h3>
-                <p>Se deben respetar la clasificación por edad y las restricciones de Apple. Los responsables familiares pueden gestionar el multijugador, las funciones sociales y las compras desde los controles parentales del dispositivo. Apple limita determinadas funciones, incluido el chat de voz, en las cuentas infantiles.</p>
-                <h3>Políticas de los servicios de Apple</h3>
-                <ul>
-                    <li><a href="https://www.apple.com/legal/privacy/data/en/game-center/">Game Center y privacidad</a></li>
-                    <li><a href="https://www.apple.com/legal/privacy/data/en/test-flight/">TestFlight y privacidad</a></li>
-                    <li><a href="https://www.apple.com/legal/privacy/data/en/app-store/">App Store y privacidad</a></li>
-                </ul>
-                <h2>Cambios a este aviso</h2>
-                <p>Este aviso se actualizará cuando cambien las funciones o las prácticas de datos, junto con la información de privacidad de App Store que corresponda. Las nuevas funciones de voz, compras u otros servicios se documentarán antes de su habilitación.</p>
-            </section>
-        </main>
+		<main class="container">
+			<section class="section legal-content">
+				<a class="btn secondary legal-back" href="apps.html" data-i18n="privacy.back">← Volver a las apps</a>
+				<h1 data-i18n="privacy.title">Aviso de privacidad de aplicaciones</h1>
+				<p data-i18n="privacy.updated">Última actualización: 7 de septiembre de 2026</p>
 
-		<footer class="container">
-			© 2026 Sebastian Clark · <a href="app-privacy.html">Aviso de privacidad de aplicaciones</a>
-		</footer>
+				<div class="card">
+					<h2 data-i18n="privacy.summary.title">Resumen claro</h2>
+					<p data-i18n="privacy.summary.p1">Cada aplicación tiene prácticas distintas. Spendly Travel mantiene sus datos de viaje en el dispositivo. Operator Ops utiliza servicios de Apple para las pruebas y el multijugador; contempla chat de voz y futuras compras dentro de la app. Estos servicios implican el tratamiento de los datos que se describen a continuación.</p>
+					<p data-i18n="privacy.summary.links"><a href="#spendly-travel">Spendly Travel</a> · <a href="#operator-ops">Operator Ops</a></p>
+				</div>
+
+				<h2 data-i18n="privacy.owner.title">Responsable y contacto</h2>
+				<p data-i18n="privacy.owner.p1">El responsable es <strong>Sebastian Clark Valenzuela</strong>. Para consultas y solicitudes de acceso, rectificación, eliminación u oposición, escribe a <a href="mailto:cotizacion@sebastianclark.mx">cotizacion@sebastianclark.mx</a>, indicando la aplicación y tu solicitud. No envíes contraseñas ni datos bancarios.</p>
+
+				<h2 id="spendly-travel">Spendly Travel</h2>
+				<p data-i18n="privacy.spendly.p1">Aplicación para organizar viajes, presupuestos y gastos. No recopila datos personales ni datos de uso para el desarrollador. Los datos que introduces permanecen en tu dispositivo; Sebastian Clark no los recibe ni puede acceder a ellos.</p>
+				<p data-i18n="privacy.spendly.p2">No incorpora cuentas propias, publicidad, analítica ni rastreo. No vende ni comparte tus datos, ni solicita acceso a contactos, fotos, audio o ubicación. No incluye suscripciones ni compras dentro de la app.</p>
+				<p data-i18n="privacy.spendly.p3">Puedes eliminar la información local desde los controles disponibles o al eliminar la aplicación. No existe una cuenta de Spendly Travel ni un registro remoto de tus viajes que solicitar eliminar al desarrollador.</p>
+
+				<h2 id="operator-ops">Operator Ops</h2>
+				<p data-i18n="privacy.operator.p1">Juego en desarrollo distribuido en beta mediante TestFlight. La integración multijugador se basa principalmente en Apple Game Center. El chat de voz y las compras con dinero real son funciones previstas; su descripción no significa que estén disponibles en todas las versiones de prueba.</p>
+
+				<h3 data-i18n="privacy.game.title">Datos del juego y matchmaking</h3>
+				<p data-i18n="privacy.game.p1">Para identificar a los participantes y organizar las sesiones, el juego utiliza el identificador de jugador y el nombre visible facilitados por Game Center. Intercambia información necesaria del lobby, como participantes, equipos, nivel y estado de preparación. El progreso, las preferencias y el inventario se guardan en el dispositivo; la información necesaria para las funciones multijugador se comunica a través de los servicios de Apple y a los participantes de la sesión.</p>
+				<p data-i18n="privacy.game.p2">Apple trata datos de cuenta y actividad de juego conforme a su propia política. La visibilidad de tu perfil y actividad depende de tus ajustes de Game Center. Usar Game Center no significa que Operator Ops acceda automáticamente a todos los datos que Apple puede gestionar.</p>
+
+				<h3 data-i18n="privacy.voice.title">Chat de voz previsto</h3>
+				<p data-i18n="privacy.voice.p1">Cuando esté disponible, el chat de voz requerirá permiso de micrófono. Al activarlo, tu voz se transmitirá a los participantes del canal o de la partida mediante la integración de Apple. Puedes denegar o revocar el permiso en los ajustes del dispositivo. No compartas información personal o sensible por voz: otros participantes pueden escucharla y podrían grabarla por sus propios medios.</p>
+				<p data-i18n="privacy.voice.p2">Antes de habilitar esta función se actualizará este aviso con sus prácticas definitivas de tratamiento y conservación de audio, incluida cualquier grabación o moderación que se implemente.</p>
+
+				<h3 data-i18n="privacy.purchase.title">Futuras compras dentro de la app</h3>
+				<p data-i18n="privacy.purchase.p1">Se contemplan compras opcionales con dinero real, procesadas por Apple mediante App Store y StoreKit. El juego utilizará datos del producto, la transacción y su estado para validar la compra, entregar el contenido y reconocer los derechos que correspondan. Los precios y condiciones aparecerán antes de confirmar una compra.</p>
+				<p data-i18n="privacy.purchase.p2">El desarrollador no recibe el número completo de tu tarjeta, su código de seguridad ni tu contraseña de Apple. Apple gestiona los datos de pago conforme a sus propias políticas. Las compras de prueba de TestFlight se realizan en un entorno de pruebas; no equivalen a compras reales para la versión comercial.</p>
+
+				<h3 data-i18n="privacy.testflight.title">Pruebas y diagnósticos de TestFlight</h3>
+				<p data-i18n="privacy.testflight.p1">Apple recopila información de uso de la beta y fallos, y la comparte con el desarrollador para mejorar el juego. Puede incluir versión de la app y del sistema, modelo de dispositivo, sesiones e informes de errores. También recibimos los comentarios y capturas que decidas enviar.</p>
+				<p data-i18n="privacy.testflight.p2">Al unirte únicamente mediante el enlace público, Apple no muestra tu nombre ni correo al desarrollador como datos de la invitación. Evita incluir información sensible en tus comentarios o capturas.</p>
+
+				<h3 data-i18n="privacy.noads.title">Datos que no se solicitan y publicidad</h3>
+				<p data-i18n="privacy.noads.p1">Operator Ops no requiere que entregues al desarrollador tu contraseña de Apple ni datos de tarjeta. El matchmaking no requiere facilitarle tu agenda, fotografías o ubicación precisa. El permiso de micrófono corresponderá al chat de voz, no al matchmaking.</p>
+				<p data-i18n="privacy.noads.p2">No se prevén anuncios en esta etapa. No se utilizarán los datos descritos para publicidad dirigida ni para venderlos. Si se incorporan anuncios u otros servicios con prácticas distintas, se actualizará este aviso antes de habilitarlos.</p>
+
+				<h3 data-i18n="privacy.retention.title">Conservación y controles</h3>
+				<p data-i18n="privacy.retention.p1">Los datos locales pueden eliminarse con la aplicación, sin que ello elimine los registros de Game Center, TestFlight o compras que conserva Apple. Puedes gestionar la visibilidad de tu actividad y las opciones sociales en los ajustes de Game Center, y dejar de probar la beta desde TestFlight.</p>
+				<p data-i18n="privacy.retention.p2">Los diagnósticos y comentarios recibidos se utilizan para investigar errores y mejorar la beta. Apple indica que conserva los comentarios de TestFlight durante un año y puede conservar diagnósticos y datos de uso hasta resolver los errores. Para solicitar acceso o eliminación de información recibida por el desarrollador, utiliza el contacto de este aviso; los datos bajo control de Apple se gestionan también desde <a href="https://privacy.apple.com/">Datos y privacidad de Apple</a>.</p>
+
+				<h3 data-i18n="privacy.minors.title">Menores y funciones sociales</h3>
+				<p data-i18n="privacy.minors.p1">Se deben respetar la clasificación por edad y las restricciones de Apple. Los responsables familiares pueden gestionar el multijugador, las funciones sociales y las compras desde los controles parentales del dispositivo. Apple limita determinadas funciones, incluido el chat de voz, en las cuentas infantiles.</p>
+
+				<h3 data-i18n="privacy.apple.title">Políticas de los servicios de Apple</h3>
+				<ul>
+					<li data-i18n="privacy.apple.gc"><a href="https://www.apple.com/legal/privacy/data/en/game-center/">Game Center y privacidad</a></li>
+					<li data-i18n="privacy.apple.tf"><a href="https://www.apple.com/legal/privacy/data/en/test-flight/">TestFlight y privacidad</a></li>
+					<li data-i18n="privacy.apple.store"><a href="https://www.apple.com/legal/privacy/data/en/app-store/">App Store y privacidad</a></li>
+				</ul>
+
+				<h2 data-i18n="privacy.changes.title">Cambios a este aviso</h2>
+				<p data-i18n="privacy.changes.p1">Este aviso se actualizará cuando cambien las funciones o las prácticas de datos, junto con la información de privacidad de App Store que corresponda. Las nuevas funciones de voz, compras u otros servicios se documentarán antes de su habilitación.</p>
+			</section>
+		</main>
+
+		<footer class="container" data-i18n="privacy.footer">© 2026 Sebastian Clark · <a href="app-privacy.html">Aviso de privacidad de aplicaciones</a></footer>
 	</body>
 </html>
