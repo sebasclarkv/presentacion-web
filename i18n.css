@@ -53,15 +53,183 @@
   line-height: 1.35;
 }
 
-@media (max-width: 930px) {
+/* En escritorio el selector también queda visualmente separado del menú. */
+@media (min-width: 931px) {
   .language-switcher {
-    margin-inline: auto;
+    position: relative;
+    margin-left: 0.7rem;
+  }
+
+  .language-switcher::before {
+    content: "";
+    position: absolute;
+    left: -0.8rem;
+    top: 18%;
+    width: 1px;
+    height: 64%;
+    border-radius: 999px;
+    background: linear-gradient(
+      180deg,
+      rgba(125, 92, 255, 0),
+      rgba(125, 92, 255, 0.72) 45%,
+      rgba(0, 211, 255, 0.88),
+      rgba(0, 211, 255, 0)
+    );
   }
 }
 
-@media (max-width: 640px) {
+/*
+   iPhone / móvil
+   - navegación en una cuadrícula limpia de dos columnas
+   - último elemento centrado si la cantidad de enlaces es impar
+   - selector ES/EN en una fila independiente con divisor degradado
+*/
+@media (max-width: 930px) {
+  .site-header {
+    position: static;
+  }
+
+  .nav {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.85rem;
+    padding: 0.9rem 0 1rem;
+  }
+
+  .nav .brand {
+    flex-shrink: 0;
+    text-align: center;
+    font-size: clamp(1.12rem, 4.7vw, 1.35rem);
+    line-height: 1.15;
+    margin-bottom: 0.1rem;
+  }
+
+  .nav .nav-links {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    align-items: stretch;
+    justify-content: stretch !important;
+    gap: 0.62rem 0.7rem;
+    width: 100%;
+    max-width: 520px;
+    margin-inline: auto;
+  }
+
+  .nav-links > a {
+    width: 100%;
+    min-width: 0;
+    min-height: 44px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    white-space: normal;
+    overflow-wrap: normal;
+    padding: 0.56rem 0.62rem;
+    border-radius: 18px;
+    font-size: clamp(0.82rem, 3.55vw, 0.92rem);
+    line-height: 1.15;
+    letter-spacing: -0.01em;
+  }
+
+  /* Si una página tiene 5 enlaces, el último queda centrado y con el mismo ancho visual. */
+  .nav-links > a:last-of-type:nth-of-type(odd) {
+    grid-column: 1 / -1;
+    width: calc(50% - 0.35rem);
+    justify-self: center;
+  }
+
+  /* El idioma ya no forma parte de la cuadrícula de navegación. */
+  .language-switcher {
+    grid-column: 1 / -1;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto auto;
+    align-items: center;
+    width: 100%;
+    margin: 0.1rem 0 0;
+    padding: 0;
+    gap: 0;
+    border: 0;
+    border-radius: 0;
+    background: transparent;
+    box-shadow: none;
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+  }
+
+  .language-switcher::before {
+    content: "";
+    display: block;
+    height: 1px;
+    min-width: 0;
+    margin-right: 0.85rem;
+    border-radius: 999px;
+    background: linear-gradient(
+      90deg,
+      rgba(125, 92, 255, 0.02) 0%,
+      rgba(125, 92, 255, 0.48) 48%,
+      rgba(0, 211, 255, 0.9) 100%
+    );
+    box-shadow: 0 0 12px rgba(0, 211, 255, 0.14);
+  }
+
   .language-switcher button {
+    min-width: 54px;
+    min-height: 40px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.48rem 0.68rem;
+    border: 1px solid rgba(255, 255, 255, 0.26);
+    border-radius: 0;
+    background: rgba(255, 255, 255, 0.055);
+    font-size: 0.76rem;
+    line-height: 1;
+    letter-spacing: 0.045em;
+    box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.02);
+  }
+
+  .language-switcher button:first-of-type {
+    border-radius: 999px 0 0 999px;
+  }
+
+  .language-switcher button:last-of-type {
+    margin-left: -1px;
+    border-radius: 0 999px 999px 0;
+  }
+
+  .language-switcher button.is-active {
+    position: relative;
+    z-index: 1;
+    border-color: rgba(114, 222, 255, 0.72);
+    background: linear-gradient(135deg, rgba(125, 92, 255, 0.96), rgba(0, 211, 255, 0.9));
+    box-shadow: 0 4px 14px rgba(0, 211, 255, 0.22);
+  }
+}
+
+@media (max-width: 420px) {
+  .nav {
+    padding-top: 0.82rem;
+  }
+
+  .nav .nav-links {
+    gap: 0.56rem 0.6rem;
+  }
+
+  .nav-links > a {
+    min-height: 42px;
+    padding: 0.52rem 0.48rem;
+    font-size: 0.82rem;
+  }
+
+  .language-switcher::before {
+    margin-right: 0.68rem;
+  }
+
+  .language-switcher button {
+    min-width: 50px;
+    min-height: 38px;
+    padding: 0.44rem 0.58rem;
     font-size: 0.72rem;
-    padding: 0.42rem 0.54rem;
   }
 }
