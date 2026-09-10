@@ -4,66 +4,67 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Juegos | Sebastian Clark</title>
-		<meta
-			name="description"
-			content="Descubre Operator Ops y participa en su beta pública mediante TestFlight."
-		/>
+		<meta name="description" content="Descubre Operator Ops y participa en su beta pública mediante TestFlight." />
 		<meta name="theme-color" content="#0f172a" />
 		<link rel="canonical" href="https://sebastianclark.mx/games.html" />
 		<meta property="og:type" content="website" />
 		<meta property="og:title" content="Juegos | Sebastian Clark" />
-		<meta
-			property="og:description"
-			content="Operator Ops: un adelanto del juego en desarrollo."
-		/>
+		<meta property="og:description" content="Operator Ops: un adelanto del juego en desarrollo." />
 		<meta property="og:url" content="https://sebastianclark.mx/games.html" />
 		<meta property="og:site_name" content="Sebastian Clark" />
 		<meta name="robots" content="index,follow,max-image-preview:large" />
 		<link rel="stylesheet" href="styles.css" />
+		<link rel="stylesheet" href="i18n.css" />
+		<script src="i18n.js" defer></script>
 	</head>
 
-	<body>
+	<body data-page="games">
 		<header class="site-header">
 			<nav class="container nav">
 				<div class="brand">Sebastian <span>Clark</span></div>
 				<div class="nav-links">
-					<a href="games.html" aria-current="page">Juegos</a>
-					<a href="index.html">Inicio</a>
-                    <a href="apps.html">Apps hechas por mí</a>
-					<a href="index.html#servicios">Servicios</a>
-					<a href="index.html#precios">Precios</a>
-					<a href="index.html#contacto">Contacto</a>
+					<a href="games.html" aria-current="page" data-i18n="nav.games">Juegos</a>
+					<a href="index.html" data-i18n="nav.home">Inicio</a>
+					<a href="apps.html" data-i18n="nav.apps">Apps hechas por mí</a>
+					<a href="index.html#servicios" data-i18n="nav.services">Servicios</a>
+					<a href="index.html#precios" data-i18n="nav.pricing">Precios</a>
+					<a href="index.html#contacto" data-i18n="nav.contact">Contacto</a>
 				</div>
 			</nav>
 		</header>
 
 		<main class="container">
-            <section class="section intro-center apps-hero">
-                <h1>Juegos</h1>
-                <p class="lead">Lo próximo en jugarse, creado por Sebastian Clark.</p>
-            </section>
-            <section class="section" aria-labelledby="operator-ops">
-                <article class="card app-card game-card">
-                    <span class="tool-status warn">En desarrollo · Beta en TestFlight</span>
-                    <h2 id="operator-ops">Operator Ops</h2>
-                    <p>Acción táctica con vista superior. Un juego en evolución donde cada movimiento cuenta. Prueba la beta y comparte tus comentarios para ayudar a dar forma a lo que viene.</p>
-                    <div class="game-features">
-                        <div><h3>Acción táctica</h3><p>Combate, estrategia y decisiones en equipo como base de la experiencia.</p></div>
-                        <div><h3>Conexión entre jugadores</h3><p>Matchmaking mediante Apple Game Center y chat de voz previsto para jugar en equipo.</p></div>
-                    </div>
-                    <p>Las funciones y la disponibilidad pueden cambiar durante las pruebas. Se contemplan futuras compras dentro de la app con dinero real, procesadas por Apple.</p>
-                    <div class="actions">
-                        <a class="btn" href="https://testflight.apple.com/join/zC37GX2M" target="_blank" rel="noopener noreferrer">Probar en TestFlight</a>
-                        <a class="btn secondary" href="app-privacy.html#operator-ops">Privacidad de Operator Ops</a>
-                    </div>
-                    <p class="beta-note">Abre el enlace para consultar los requisitos y cupos disponibles. Instala TestFlight y sigue las instrucciones de Apple para unirte.</p>
-                </article>
-            </section>
-        </main>
-        <footer class="container">
-            © 2026 Sebastian Clark · <a href="apps.html">Aplicaciones</a>
-            · <a href="app-privacy.html#operator-ops">Privacidad de Operator Ops</a>
-            · <a href="legal.html">Aviso Legal</a>
-        </footer>
-    </body>
+			<section class="section intro-center apps-hero">
+				<h1 data-i18n="games.hero.title">Juegos</h1>
+				<p class="lead" data-i18n="games.hero.lead">Lo próximo en jugarse, creado por Sebastian Clark.</p>
+			</section>
+			<section class="section" aria-labelledby="operator-ops">
+				<article class="card app-card game-card">
+					<span class="tool-status warn" data-i18n="games.status">En desarrollo · Beta en TestFlight</span>
+					<h2 id="operator-ops">Operator Ops</h2>
+					<p data-i18n="games.desc">Acción táctica con vista superior. Un juego en evolución donde cada movimiento cuenta. Prueba la beta y comparte tus comentarios para ayudar a dar forma a lo que viene.</p>
+					<div class="game-features">
+						<div>
+							<h3 data-i18n="games.feature1.title">Acción táctica</h3>
+							<p data-i18n="games.feature1.desc">Combate, estrategia y decisiones en equipo como base de la experiencia.</p>
+						</div>
+						<div>
+							<h3 data-i18n="games.feature2.title">Conexión entre jugadores</h3>
+							<p data-i18n="games.feature2.desc">Matchmaking mediante Apple Game Center y chat de voz previsto para jugar en equipo.</p>
+						</div>
+					</div>
+					<p data-i18n="games.note">Las funciones y la disponibilidad pueden cambiar durante las pruebas. Se contemplan futuras compras dentro de la app con dinero real, procesadas por Apple.</p>
+					<div class="actions">
+						<a class="btn" href="https://testflight.apple.com/join/zC37GX2M" target="_blank" rel="noopener noreferrer" data-i18n="games.testflight">Probar en TestFlight</a>
+						<a class="btn secondary" href="app-privacy.html#operator-ops" data-i18n="games.privacy">Privacidad de Operator Ops</a>
+					</div>
+					<p class="beta-note" data-i18n="games.beta">Abre el enlace para consultar los requisitos y cupos disponibles. Instala TestFlight y sigue las instrucciones de Apple para unirte.</p>
+				</article>
+			</section>
+		</main>
+
+		<footer class="container" data-i18n="games.footer">
+			© 2026 Sebastian Clark · <a href="apps.html">Aplicaciones</a> · <a href="app-privacy.html#operator-ops">Privacidad de Operator Ops</a> · <a href="legal.html">Aviso Legal</a>
+		</footer>
+	</body>
 </html>
