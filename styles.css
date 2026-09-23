@@ -679,3 +679,30 @@ main section[id], #opciones-web, #desarrollo-web { scroll-margin-top: 12rem; }
     height: 24px;
   }
 }
+
+
+/* Soy el Impostor: mantiene el lenguaje visual de la página de Juegos. */
+.impostor-card {
+  overflow: hidden;
+}
+.impostor-logo-wrap {
+  width: min(280px, 72vw);
+  margin: -0.35rem auto 0.65rem;
+  line-height: 0;
+}
+.impostor-logo {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  mix-blend-mode: screen;
+  filter: contrast(1.06) saturate(1.08);
+}
+#soy-el-impostor {
+  scroll-margin-top: 12rem;
+}
+@media (max-width: 930px) {
+  #soy-el-impostor {
+    scroll-margin-top: 1.5rem;
+  }
+}

@@ -187,6 +187,15 @@
     'games.testflight': 'Try it on TestFlight',
     'games.privacy': 'Operator Ops Privacy',
     'games.beta': 'Open the link to check requirements and available testing spots. Install TestFlight and follow Apple’s instructions to join.',
+    'games.impostor.status': 'Web version available · iOS in development',
+    'games.impostor.desc': 'A social deduction game for 3 or more players. Give one-word clues, spot contradictions, and figure out who does not know the secret word.',
+    'games.impostor.feature1.title': 'Rooms with friends',
+    'games.impostor.feature1.desc': 'Create a private room with a code or join a public room to start a match.',
+    'games.impostor.feature2.title': 'Clues, suspicion, and voting',
+    'games.impostor.feature2.desc': 'Three rounds of clues test the group before a quick vote to identify the impostor.',
+    'games.impostor.note': 'Quick matches for 3 or more players, with room chat and brief reconnection support. No ads, in-app purchases, or subscriptions in the current version.',
+    'games.impostor.play': 'Play the web version',
+    'games.impostor.privacy': 'Soy el Impostor Privacy',
     'games.footer': '© 2026 Sebastian Clark · <a href="apps.html">Apps</a> · <a href="app-privacy.html#operator-ops">Operator Ops Privacy</a> · <a href="legal.html">Legal Notice</a>',
 
     // App privacy page
@@ -226,6 +235,25 @@
     'privacy.apple.gc': '<a href="https://www.apple.com/legal/privacy/data/en/game-center/">Game Center and Privacy</a>',
     'privacy.apple.tf': '<a href="https://www.apple.com/legal/privacy/data/en/test-flight/">TestFlight and Privacy</a>',
     'privacy.apple.store': '<a href="https://www.apple.com/legal/privacy/data/en/app-store/">App Store and Privacy</a>',
+    'privacy.impostor.updated': 'This section was last updated on September 22, 2026.',
+    'privacy.impostor.p1': 'A multiplayer social deduction game for 3 or more people. To create, discover, and maintain online rooms, the service processes only the information needed to identify the session, synchronize the match, and display participants inside the room.',
+    'privacy.impostor.identity.title': 'Player identity and rooms',
+    'privacy.impostor.identity.p1': 'When you create or join a room, the service processes the display name you choose, a technical client or player identifier, and the room code. In versions that integrate Game Center, the app may also use the player identifier and display name Apple provides to the app to authenticate the participant and help restore match continuity. The developer does not receive your Apple password or payment information.',
+    'privacy.impostor.identity.p2': 'Public rooms may show other players the room code, the host’s display name, the number of participants, and the current match phase. This information is used only to discover and join matches.',
+    'privacy.impostor.gameplay.title': 'Clues, votes, chat, and match state',
+    'privacy.impostor.gameplay.p1': 'During a match, the service processes the participant list, connection state, turns, the role needed to run the match, clues, votes, chat messages, and the result. Display names, clues, and messages are shared with players in the same room because they are part of the multiplayer experience.',
+    'privacy.impostor.gameplay.p2': 'Do not share personal or sensitive information in clues or chat. Other participants can see this content and may keep it through their own means, such as a screenshot. This content is not used for targeted advertising.',
+    'privacy.impostor.retention.title': 'Retention and reconnection',
+    'privacy.impostor.retention.p1': 'In the current web infrastructure, active room and match state is kept in memory rather than in a persistent database. A disconnected player may remain temporarily in the room for approximately 30 seconds to allow reconnection; a room is removed from the service when it has no participants. A technical identifier may remain stored locally in the browser or device to help maintain continuity.',
+    'privacy.impostor.retention.p2': 'Connecting to the service may involve technical processing of network data, such as an IP address, by the infrastructure or hosting provider to deliver and protect the connection. Soy el Impostor does not use that data to build advertising profiles. If the iOS infrastructure materially changes how data is stored or retained, this notice will be updated before that change is enabled.',
+    'privacy.impostor.apple.title': 'Game Center, TestFlight, and diagnostics',
+    'privacy.impostor.apple.p1': 'When Game Center or TestFlight is used, Apple may process account information, game activity, and diagnostics under its own policies. During a beta, the developer may receive through TestFlight crash reports, technical app and device information, and feedback or screenshots that the user chooses to submit.',
+    'privacy.impostor.apple.gc': '<a href="https://www.apple.com/legal/privacy/data/en/game-center/">Game Center and Privacy</a>',
+    'privacy.impostor.apple.tf': '<a href="https://www.apple.com/legal/privacy/data/en/test-flight/">TestFlight and Privacy</a>',
+    'privacy.impostor.ads.title': 'Advertising, tracking, and permissions',
+    'privacy.impostor.ads.p1': 'The current Soy el Impostor code does not integrate advertising or tools intended for advertising tracking, and the developer does not sell the data described in this section. The game does not need access to contacts, photos, or precise location to work. If services or permissions with different practices are added, this notice and the applicable App Store privacy information will be updated before they are enabled.',
+    'privacy.impostor.contact.title': 'Contact and requests',
+    'privacy.impostor.contact.p1': 'For privacy questions or requests involving information under the developer’s control, email <a href="mailto:cotizacion@sebastianclark.mx">cotizacion@sebastianclark.mx</a> and state that your request concerns Soy el Impostor.',
     'privacy.changes.title': 'Changes to this notice',
     'privacy.changes.p1': 'This notice will be updated when features or data practices change, together with the applicable App Store privacy information. New voice, purchase, or other service features will be documented before they are enabled.',
     'privacy.footer': '© 2026 Sebastian Clark · <a href="app-privacy.html">Application Privacy Notice</a>',
@@ -350,9 +378,9 @@
       },
       en: {
         title: 'Games | Sebastian Clark',
-        description: 'Discover Operator Ops and join its public beta through TestFlight.',
+        description: 'Discover Operator Ops and Soy el Impostor, games created by Sebastian Clark.',
         ogTitle: 'Games | Sebastian Clark',
-        ogDescription: 'Operator Ops: a preview of the game currently in development.'
+        ogDescription: 'Operator Ops and Soy el Impostor: games created by Sebastian Clark.'
       }
     },
     privacy: {
