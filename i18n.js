@@ -235,6 +235,7 @@
     'privacy.apple.gc': '<a href="https://www.apple.com/legal/privacy/data/en/game-center/">Game Center and Privacy</a>',
     'privacy.apple.tf': '<a href="https://www.apple.com/legal/privacy/data/en/test-flight/">TestFlight and Privacy</a>',
     'privacy.apple.store': '<a href="https://www.apple.com/legal/privacy/data/en/app-store/">App Store and Privacy</a>',
+    'privacy.impostor.title': 'The Impostor',
     'privacy.impostor.updated': 'This section was last updated on September 22, 2026.',
     'privacy.impostor.p1': 'A multiplayer social deduction game for 3 or more people. To create, discover, and maintain online rooms, the service processes only the information needed to identify the session, synchronize the match, and display participants inside the room.',
     'privacy.impostor.identity.title': 'Player identity and rooms',
