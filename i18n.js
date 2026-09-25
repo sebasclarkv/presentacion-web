@@ -40,13 +40,13 @@
     'index.stat.4.value': 'Web and automation',
     'index.stat.4.note': 'Responsive websites and integrations that complete your digital presence.',
     'index.projects.title': 'Ideas you can already explore',
-    'index.projects.lead': 'A travel app and a game currently taking shape. See what I’m building.',
+    'index.projects.lead': 'A travel app and a 2D tactical shooter already available. See what I’m building.',
     'index.spendly.status': 'App · Available on the App Store',
     'index.spendly.desc': 'Itineraries, expenses, and budgets in one place to organize every stage of your trip.',
     'index.spendly.cta': 'Discover Spendly Travel',
-    'index.operator.status': 'Game · In development',
-    'index.operator.desc': 'Top-down tactical action. Explore the project and join the TestFlight beta.',
-    'index.operator.cta': 'Explore Operator Ops',
+    'index.operator.status': 'Game · Available on the App Store',
+    'index.operator.desc': 'Top-down 2D tactical shooter. Available now on iPhone; Android and new features will roll out gradually.',
+    'index.operator.cta': 'View Operator Ops',
     'index.services.title': 'From your idea to an app or game',
     'index.services.lead': 'We define a focused first version and build from there.',
     'index.services.app.title': 'iPhone applications',
@@ -177,16 +177,16 @@
     // Games page
     'games.hero.title': 'Games',
     'games.hero.lead': 'What’s next to play, created by Sebastian Clark.',
-    'games.status': 'In development · TestFlight beta',
-    'games.desc': 'Top-down tactical action. An evolving game where every movement matters. Try the beta and share feedback to help shape what comes next.',
-    'games.feature1.title': 'Tactical action',
-    'games.feature1.desc': 'Combat, strategy, and team decisions form the core of the experience.',
-    'games.feature2.title': 'Player connectivity',
-    'games.feature2.desc': 'Matchmaking through Apple Game Center, with voice chat planned for team play.',
-    'games.note': 'Features and availability may change during testing. Optional real-money in-app purchases are planned and will be processed by Apple.',
-    'games.testflight': 'Try it on TestFlight',
+    'games.status': 'Available on the App Store · Android coming soon',
+    'games.desc': 'A top-down 2D tactical shooter with fast combat and controls built for movement, aim, and quick reactions. Operator Ops will keep growing with new features and content through updates.',
+    'games.feature1.title': '2D tactical shooter',
+    'games.feature1.desc': 'Top-down combat, precise movement, and encounters where positioning and reaction time matter.',
+    'games.feature2.title': 'Gradual rollout',
+    'games.feature2.desc': 'New modes, systems, and features will be enabled progressively as development continues.',
+    'games.note': 'Available now for iPhone on the App Store. An Android version is in development, and some features will be added gradually through future updates.',
+    'games.appstore': 'Download on the App Store',
     'games.privacy': 'Operator Ops Privacy',
-    'games.beta': 'Open the link to check requirements and available testing spots. Install TestFlight and follow Apple’s instructions to join.',
+    'games.rollout': 'The experience will continue to evolve after launch: mode and feature availability may vary by version.',
     'games.impostor.status': 'Web version available · iOS in development',
     'games.impostor.desc': 'A social deduction game for 3 or more players. Give one-word clues, spot contradictions, and figure out who does not know the secret word.',
     'games.impostor.feature1.title': 'Rooms with friends',
@@ -376,15 +376,15 @@
     games: {
       es: {
         title: 'Juegos | Sebastian Clark',
-        description: 'Descubre Operator Ops y participa en su beta pública mediante TestFlight.',
+        description: 'Descubre Operator Ops, shooter táctico 2D disponible en App Store, y Soy el Impostor.',
         ogTitle: 'Juegos | Sebastian Clark',
-        ogDescription: 'Operator Ops: un adelanto del juego en desarrollo.'
+        ogDescription: 'Operator Ops: shooter táctico 2D disponible en App Store, con Android próximamente.'
       },
       en: {
         title: 'Games | Sebastian Clark',
-        description: 'Discover Operator Ops and Soy el Impostor, games created by Sebastian Clark.',
+        description: 'Discover Operator Ops, a 2D tactical shooter available on the App Store, and Soy el Impostor.',
         ogTitle: 'Games | Sebastian Clark',
-        ogDescription: 'Operator Ops and Soy el Impostor: games created by Sebastian Clark.'
+        ogDescription: 'Operator Ops: a 2D tactical shooter available on the App Store, with Android coming soon.'
       }
     },
     privacy: {

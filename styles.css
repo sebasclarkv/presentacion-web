@@ -565,7 +565,22 @@ footer {
 .game-features p { margin: 0; }
 .game-card .tool-status { font-size: .875rem; }
 .game-card .btn { white-space: normal; text-align: center; min-height: 44px; }
-.game-card .beta-note { margin: 1rem auto 0; font-size: .875rem; }
+.game-card .beta-note,
+.game-card .release-note { margin: 1rem auto 0; font-size: .875rem; }
+.operator-card { overflow: hidden; }
+.operator-logo-wrap {
+  width: min(220px, 58vw);
+  margin: -0.25rem auto 0.9rem;
+  line-height: 0;
+}
+.operator-logo {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  border-radius: 26%;
+  box-shadow: 0 14px 34px rgba(0, 211, 255, 0.14);
+}
 .legal-content { max-width: 850px; margin-inline: auto; overflow-wrap: anywhere; }
 .legal-content h2 { margin-top: 2.5rem; }
 .legal-content h3 { margin-top: 1.5rem; }
